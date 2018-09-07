@@ -10,13 +10,23 @@
 
 @interface LoginViewController ()
 
+@property (weak, nonatomic) IBOutlet UILabel *lblTitle;
+@property (weak, nonatomic) IBOutlet UILabel *lblTitle2;
+
+@property (weak, nonatomic) IBOutlet UIView *actionView;
+@property (weak, nonatomic) IBOutlet UIButton *btnLogin;
+@property (weak, nonatomic) IBOutlet UIButton *btnMake;
+
+
 @end
 
 @implementation LoginViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    [self setupUI];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,14 +34,36 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
+#pragma mark - method
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)setupUI
+{
+    _btnLogin.layer.cornerRadius = _btnLogin.frame.size.height / 2;
+    _btnLogin.layer.borderColor = [[UIColor whiteColor]CGColor];
+    _btnLogin.layer.borderWidth = 1.5;
+    
+    _btnMake.layer.cornerRadius = _btnMake.frame.size.height / 2;
 }
-*/
+
+#pragma mark - event
+
+- (IBAction)clickLogin:(id)sender
+{
+    [UIView animateWithDuration:0.2 animations:^{
+        
+        self.actionView.frame = CGRectMake(self.actionView.frame.origin.x,
+                                           self.actionView.frame.origin.y + self.actionView.frame.size.height,
+                                           self.actionView.frame.size.width,
+                                           self.actionView.frame.size.height);
+        
+    } completion:^(BOOL finished) {
+        
+    }];
+}
+
+- (IBAction)clickMake:(id)sender
+{
+    
+}
 
 @end
