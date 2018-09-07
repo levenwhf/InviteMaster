@@ -15,6 +15,7 @@
 		DFAC4468214262300021B7E0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DFAC4467214262300021B7E0 /* main.m */; };
 		DFAC4472214262300021B7E0 /* InviteMasterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DFAC4471214262300021B7E0 /* InviteMasterTests.m */; };
 		DFAC447D214262300021B7E0 /* InviteMasterUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DFAC447C214262300021B7E0 /* InviteMasterUITests.m */; };
+		DFAC448D214263AA0021B7E0 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFAC448C214263AA0021B7E0 /* LoginViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		DFAC4478214262300021B7E0 /* InviteMasterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InviteMasterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFAC447C214262300021B7E0 /* InviteMasterUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InviteMasterUITests.m; sourceTree = "<group>"; };
 		DFAC447E214262300021B7E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFAC448B214263AA0021B7E0 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		DFAC448C214263AA0021B7E0 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 		DFAC4457214262280021B7E0 /* InviteMaster */ = {
 			isa = PBXGroup;
 			children = (
+				DFAC448A214263920021B7E0 /* Login */,
 				DFAC4458214262280021B7E0 /* AppDelegate.h */,
 				DFAC4459214262280021B7E0 /* AppDelegate.m */,
 				DFAC445B214262280021B7E0 /* ViewController.h */,
@@ -130,6 +134,15 @@
 				DFAC447E214262300021B7E0 /* Info.plist */,
 			);
 			path = InviteMasterUITests;
+			sourceTree = "<group>";
+		};
+		DFAC448A214263920021B7E0 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				DFAC448B214263AA0021B7E0 /* LoginViewController.h */,
+				DFAC448C214263AA0021B7E0 /* LoginViewController.m */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFAC448D214263AA0021B7E0 /* LoginViewController.m in Sources */,
 				DFAC445D214262280021B7E0 /* ViewController.m in Sources */,
 				DFAC4468214262300021B7E0 /* main.m in Sources */,
 				DFAC445A214262280021B7E0 /* AppDelegate.m in Sources */,
