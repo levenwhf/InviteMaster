@@ -1,0 +1,576 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DFAC445A214262280021B7E0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DFAC4459214262280021B7E0 /* AppDelegate.m */; };
+		DFAC445D214262280021B7E0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFAC445C214262280021B7E0 /* ViewController.m */; };
+		DFAC4460214262280021B7E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFAC445E214262280021B7E0 /* Main.storyboard */; };
+		DFAC4462214262300021B7E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFAC4461214262300021B7E0 /* Assets.xcassets */; };
+		DFAC4465214262300021B7E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFAC4463214262300021B7E0 /* LaunchScreen.storyboard */; };
+		DFAC4468214262300021B7E0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DFAC4467214262300021B7E0 /* main.m */; };
+		DFAC4472214262300021B7E0 /* InviteMasterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DFAC4471214262300021B7E0 /* InviteMasterTests.m */; };
+		DFAC447D214262300021B7E0 /* InviteMasterUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DFAC447C214262300021B7E0 /* InviteMasterUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DFAC446E214262300021B7E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DFAC444D214262280021B7E0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DFAC4454214262280021B7E0;
+			remoteInfo = InviteMaster;
+		};
+		DFAC4479214262300021B7E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DFAC444D214262280021B7E0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DFAC4454214262280021B7E0;
+			remoteInfo = InviteMaster;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DFAC4455214262280021B7E0 /* InviteMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InviteMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFAC4458214262280021B7E0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DFAC4459214262280021B7E0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DFAC445B214262280021B7E0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DFAC445C214262280021B7E0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DFAC445F214262280021B7E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DFAC4461214262300021B7E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DFAC4464214262300021B7E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DFAC4466214262300021B7E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFAC4467214262300021B7E0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DFAC446D214262300021B7E0 /* InviteMasterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InviteMasterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFAC4471214262300021B7E0 /* InviteMasterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InviteMasterTests.m; sourceTree = "<group>"; };
+		DFAC4473214262300021B7E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFAC4478214262300021B7E0 /* InviteMasterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InviteMasterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFAC447C214262300021B7E0 /* InviteMasterUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InviteMasterUITests.m; sourceTree = "<group>"; };
+		DFAC447E214262300021B7E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DFAC4452214262280021B7E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFAC446A214262300021B7E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFAC4475214262300021B7E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DFAC444C214262280021B7E0 = {
+			isa = PBXGroup;
+			children = (
+				DFAC4457214262280021B7E0 /* InviteMaster */,
+				DFAC4470214262300021B7E0 /* InviteMasterTests */,
+				DFAC447B214262300021B7E0 /* InviteMasterUITests */,
+				DFAC4456214262280021B7E0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DFAC4456214262280021B7E0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DFAC4455214262280021B7E0 /* InviteMaster.app */,
+				DFAC446D214262300021B7E0 /* InviteMasterTests.xctest */,
+				DFAC4478214262300021B7E0 /* InviteMasterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DFAC4457214262280021B7E0 /* InviteMaster */ = {
+			isa = PBXGroup;
+			children = (
+				DFAC4458214262280021B7E0 /* AppDelegate.h */,
+				DFAC4459214262280021B7E0 /* AppDelegate.m */,
+				DFAC445B214262280021B7E0 /* ViewController.h */,
+				DFAC445C214262280021B7E0 /* ViewController.m */,
+				DFAC445E214262280021B7E0 /* Main.storyboard */,
+				DFAC4461214262300021B7E0 /* Assets.xcassets */,
+				DFAC4463214262300021B7E0 /* LaunchScreen.storyboard */,
+				DFAC4466214262300021B7E0 /* Info.plist */,
+				DFAC4467214262300021B7E0 /* main.m */,
+			);
+			path = InviteMaster;
+			sourceTree = "<group>";
+		};
+		DFAC4470214262300021B7E0 /* InviteMasterTests */ = {
+			isa = PBXGroup;
+			children = (
+				DFAC4471214262300021B7E0 /* InviteMasterTests.m */,
+				DFAC4473214262300021B7E0 /* Info.plist */,
+			);
+			path = InviteMasterTests;
+			sourceTree = "<group>";
+		};
+		DFAC447B214262300021B7E0 /* InviteMasterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DFAC447C214262300021B7E0 /* InviteMasterUITests.m */,
+				DFAC447E214262300021B7E0 /* Info.plist */,
+			);
+			path = InviteMasterUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DFAC4454214262280021B7E0 /* InviteMaster */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFAC4481214262300021B7E0 /* Build configuration list for PBXNativeTarget "InviteMaster" */;
+			buildPhases = (
+				DFAC4451214262280021B7E0 /* Sources */,
+				DFAC4452214262280021B7E0 /* Frameworks */,
+				DFAC4453214262280021B7E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InviteMaster;
+			productName = InviteMaster;
+			productReference = DFAC4455214262280021B7E0 /* InviteMaster.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DFAC446C214262300021B7E0 /* InviteMasterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFAC4484214262300021B7E0 /* Build configuration list for PBXNativeTarget "InviteMasterTests" */;
+			buildPhases = (
+				DFAC4469214262300021B7E0 /* Sources */,
+				DFAC446A214262300021B7E0 /* Frameworks */,
+				DFAC446B214262300021B7E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DFAC446F214262300021B7E0 /* PBXTargetDependency */,
+			);
+			name = InviteMasterTests;
+			productName = InviteMasterTests;
+			productReference = DFAC446D214262300021B7E0 /* InviteMasterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DFAC4477214262300021B7E0 /* InviteMasterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFAC4487214262300021B7E0 /* Build configuration list for PBXNativeTarget "InviteMasterUITests" */;
+			buildPhases = (
+				DFAC4474214262300021B7E0 /* Sources */,
+				DFAC4475214262300021B7E0 /* Frameworks */,
+				DFAC4476214262300021B7E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DFAC447A214262300021B7E0 /* PBXTargetDependency */,
+			);
+			name = InviteMasterUITests;
+			productName = InviteMasterUITests;
+			productReference = DFAC4478214262300021B7E0 /* InviteMasterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DFAC444D214262280021B7E0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Leven Wei";
+				TargetAttributes = {
+					DFAC4454214262280021B7E0 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					DFAC446C214262300021B7E0 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = DFAC4454214262280021B7E0;
+					};
+					DFAC4477214262300021B7E0 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = DFAC4454214262280021B7E0;
+					};
+				};
+			};
+			buildConfigurationList = DFAC4450214262280021B7E0 /* Build configuration list for PBXProject "InviteMaster" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DFAC444C214262280021B7E0;
+			productRefGroup = DFAC4456214262280021B7E0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DFAC4454214262280021B7E0 /* InviteMaster */,
+				DFAC446C214262300021B7E0 /* InviteMasterTests */,
+				DFAC4477214262300021B7E0 /* InviteMasterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DFAC4453214262280021B7E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFAC4465214262300021B7E0 /* LaunchScreen.storyboard in Resources */,
+				DFAC4462214262300021B7E0 /* Assets.xcassets in Resources */,
+				DFAC4460214262280021B7E0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFAC446B214262300021B7E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFAC4476214262300021B7E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DFAC4451214262280021B7E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFAC445D214262280021B7E0 /* ViewController.m in Sources */,
+				DFAC4468214262300021B7E0 /* main.m in Sources */,
+				DFAC445A214262280021B7E0 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFAC4469214262300021B7E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFAC4472214262300021B7E0 /* InviteMasterTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFAC4474214262300021B7E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFAC447D214262300021B7E0 /* InviteMasterUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DFAC446F214262300021B7E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DFAC4454214262280021B7E0 /* InviteMaster */;
+			targetProxy = DFAC446E214262300021B7E0 /* PBXContainerItemProxy */;
+		};
+		DFAC447A214262300021B7E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DFAC4454214262280021B7E0 /* InviteMaster */;
+			targetProxy = DFAC4479214262300021B7E0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DFAC445E214262280021B7E0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DFAC445F214262280021B7E0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DFAC4463214262300021B7E0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DFAC4464214262300021B7E0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DFAC447F214262300021B7E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DFAC4480214262300021B7E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DFAC4482214262300021B7E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = InviteMaster/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = xfkj.InviteMaster;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DFAC4483214262300021B7E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = InviteMaster/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = xfkj.InviteMaster;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DFAC4485214262300021B7E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = InviteMasterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = xfkj.InviteMasterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InviteMaster.app/InviteMaster";
+			};
+			name = Debug;
+		};
+		DFAC4486214262300021B7E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = InviteMasterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = xfkj.InviteMasterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InviteMaster.app/InviteMaster";
+			};
+			name = Release;
+		};
+		DFAC4488214262300021B7E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = InviteMasterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = xfkj.InviteMasterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = InviteMaster;
+			};
+			name = Debug;
+		};
+		DFAC4489214262300021B7E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = InviteMasterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = xfkj.InviteMasterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = InviteMaster;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DFAC4450214262280021B7E0 /* Build configuration list for PBXProject "InviteMaster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFAC447F214262300021B7E0 /* Debug */,
+				DFAC4480214262300021B7E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFAC4481214262300021B7E0 /* Build configuration list for PBXNativeTarget "InviteMaster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFAC4482214262300021B7E0 /* Debug */,
+				DFAC4483214262300021B7E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFAC4484214262300021B7E0 /* Build configuration list for PBXNativeTarget "InviteMasterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFAC4485214262300021B7E0 /* Debug */,
+				DFAC4486214262300021B7E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFAC4487214262300021B7E0 /* Build configuration list for PBXNativeTarget "InviteMasterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFAC4488214262300021B7E0 /* Debug */,
+				DFAC4489214262300021B7E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DFAC444D214262280021B7E0 /* Project object */;
+}
