@@ -16,11 +16,11 @@
 		DFAC4472214262300021B7E0 /* InviteMasterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DFAC4471214262300021B7E0 /* InviteMasterTests.m */; };
 		DFAC447D214262300021B7E0 /* InviteMasterUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DFAC447C214262300021B7E0 /* InviteMasterUITests.m */; };
 		DFAC448D214263AA0021B7E0 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFAC448C214263AA0021B7E0 /* LoginViewController.m */; };
-		DFB5D60E2145445D0013E8F5 /* NSString+WPAttributedMarkup.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB5D6042145445C0013E8F5 /* NSString+WPAttributedMarkup.m */; };
-		DFB5D60F2145445D0013E8F5 /* NSMutableString+TagReplace.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB5D6062145445C0013E8F5 /* NSMutableString+TagReplace.m */; };
-		DFB5D6102145445D0013E8F5 /* WPHotspotLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB5D60B2145445C0013E8F5 /* WPHotspotLabel.m */; };
-		DFB5D6112145445D0013E8F5 /* WPTappableLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB5D60C2145445C0013E8F5 /* WPTappableLabel.m */; };
-		DFB5D6122145445D0013E8F5 /* WPAttributedStyleAction.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB5D60D2145445C0013E8F5 /* WPAttributedStyleAction.m */; };
+		DFB5D6212145456F0013E8F5 /* NSString+WPAttributedMarkup.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB5D6172145456F0013E8F5 /* NSString+WPAttributedMarkup.m */; };
+		DFB5D6222145456F0013E8F5 /* NSMutableString+TagReplace.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB5D6192145456F0013E8F5 /* NSMutableString+TagReplace.m */; };
+		DFB5D6232145456F0013E8F5 /* WPHotspotLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB5D61E2145456F0013E8F5 /* WPHotspotLabel.m */; };
+		DFB5D6242145456F0013E8F5 /* WPTappableLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB5D61F2145456F0013E8F5 /* WPTappableLabel.m */; };
+		DFB5D6252145456F0013E8F5 /* WPAttributedStyleAction.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB5D6202145456F0013E8F5 /* WPAttributedStyleAction.m */; };
 		DFEF65842144E5C900B91D76 /* AreaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEF65832144E5C900B91D76 /* AreaViewController.m */; };
 		DFEF65872144E79A00B91D76 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFEF65862144E79A00B91D76 /* Home.storyboard */; };
 		DFEF658A2144E7B300B91D76 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEF65892144E7B300B91D76 /* HomeViewController.m */; };
@@ -63,16 +63,16 @@
 		DFAC447E214262300021B7E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DFAC448B214263AA0021B7E0 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		DFAC448C214263AA0021B7E0 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
-		DFB5D6032145445C0013E8F5 /* NSMutableString+TagReplace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableString+TagReplace.h"; sourceTree = "<group>"; };
-		DFB5D6042145445C0013E8F5 /* NSString+WPAttributedMarkup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+WPAttributedMarkup.m"; sourceTree = "<group>"; };
-		DFB5D6052145445C0013E8F5 /* NSString+WPAttributedMarkup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+WPAttributedMarkup.h"; sourceTree = "<group>"; };
-		DFB5D6062145445C0013E8F5 /* NSMutableString+TagReplace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableString+TagReplace.m"; sourceTree = "<group>"; };
-		DFB5D6082145445C0013E8F5 /* WPTappableLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPTappableLabel.h; sourceTree = "<group>"; };
-		DFB5D6092145445C0013E8F5 /* WPHotspotLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPHotspotLabel.h; sourceTree = "<group>"; };
-		DFB5D60A2145445C0013E8F5 /* WPAttributedStyleAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPAttributedStyleAction.h; sourceTree = "<group>"; };
-		DFB5D60B2145445C0013E8F5 /* WPHotspotLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPHotspotLabel.m; sourceTree = "<group>"; };
-		DFB5D60C2145445C0013E8F5 /* WPTappableLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPTappableLabel.m; sourceTree = "<group>"; };
-		DFB5D60D2145445C0013E8F5 /* WPAttributedStyleAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPAttributedStyleAction.m; sourceTree = "<group>"; };
+		DFB5D6162145456F0013E8F5 /* NSMutableString+TagReplace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableString+TagReplace.h"; sourceTree = "<group>"; };
+		DFB5D6172145456F0013E8F5 /* NSString+WPAttributedMarkup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+WPAttributedMarkup.m"; sourceTree = "<group>"; };
+		DFB5D6182145456F0013E8F5 /* NSString+WPAttributedMarkup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+WPAttributedMarkup.h"; sourceTree = "<group>"; };
+		DFB5D6192145456F0013E8F5 /* NSMutableString+TagReplace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableString+TagReplace.m"; sourceTree = "<group>"; };
+		DFB5D61B2145456F0013E8F5 /* WPTappableLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPTappableLabel.h; sourceTree = "<group>"; };
+		DFB5D61C2145456F0013E8F5 /* WPHotspotLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPHotspotLabel.h; sourceTree = "<group>"; };
+		DFB5D61D2145456F0013E8F5 /* WPAttributedStyleAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPAttributedStyleAction.h; sourceTree = "<group>"; };
+		DFB5D61E2145456F0013E8F5 /* WPHotspotLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPHotspotLabel.m; sourceTree = "<group>"; };
+		DFB5D61F2145456F0013E8F5 /* WPTappableLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPTappableLabel.m; sourceTree = "<group>"; };
+		DFB5D6202145456F0013E8F5 /* WPAttributedStyleAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPAttributedStyleAction.m; sourceTree = "<group>"; };
 		DFEF65822144E5C900B91D76 /* AreaViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AreaViewController.h; sourceTree = "<group>"; };
 		DFEF65832144E5C900B91D76 /* AreaViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AreaViewController.m; sourceTree = "<group>"; };
 		DFEF65862144E79A00B91D76 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
@@ -138,7 +138,7 @@
 		DFAC4457214262280021B7E0 /* InviteMaster */ = {
 			isa = PBXGroup;
 			children = (
-				DFB5D6002145445C0013E8F5 /* ThirdFiles */,
+				DFB5D613214545500013E8F5 /* ThirdFiles */,
 				DFEF65852144E78800B91D76 /* Home */,
 				DF15F0D7214418E500CA49C4 /* BaseClass */,
 				DFAC448A214263920021B7E0 /* Login */,
@@ -182,43 +182,43 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
-		DFB5D6002145445C0013E8F5 /* ThirdFiles */ = {
+		DFB5D613214545500013E8F5 /* ThirdFiles */ = {
 			isa = PBXGroup;
 			children = (
-				DFB5D6012145445C0013E8F5 /* AttributedLabel */,
+				DFB5D6142145456F0013E8F5 /* AttributedLabel */,
 			);
 			path = ThirdFiles;
 			sourceTree = "<group>";
 		};
-		DFB5D6012145445C0013E8F5 /* AttributedLabel */ = {
+		DFB5D6142145456F0013E8F5 /* AttributedLabel */ = {
 			isa = PBXGroup;
 			children = (
-				DFB5D6022145445C0013E8F5 /* WPAttributedMarkup */,
-				DFB5D6072145445C0013E8F5 /* Extras */,
+				DFB5D6152145456F0013E8F5 /* WPAttributedMarkup */,
+				DFB5D61A2145456F0013E8F5 /* Extras */,
 			);
 			path = AttributedLabel;
 			sourceTree = "<group>";
 		};
-		DFB5D6022145445C0013E8F5 /* WPAttributedMarkup */ = {
+		DFB5D6152145456F0013E8F5 /* WPAttributedMarkup */ = {
 			isa = PBXGroup;
 			children = (
-				DFB5D6032145445C0013E8F5 /* NSMutableString+TagReplace.h */,
-				DFB5D6042145445C0013E8F5 /* NSString+WPAttributedMarkup.m */,
-				DFB5D6052145445C0013E8F5 /* NSString+WPAttributedMarkup.h */,
-				DFB5D6062145445C0013E8F5 /* NSMutableString+TagReplace.m */,
+				DFB5D6162145456F0013E8F5 /* NSMutableString+TagReplace.h */,
+				DFB5D6172145456F0013E8F5 /* NSString+WPAttributedMarkup.m */,
+				DFB5D6182145456F0013E8F5 /* NSString+WPAttributedMarkup.h */,
+				DFB5D6192145456F0013E8F5 /* NSMutableString+TagReplace.m */,
 			);
 			path = WPAttributedMarkup;
 			sourceTree = "<group>";
 		};
-		DFB5D6072145445C0013E8F5 /* Extras */ = {
+		DFB5D61A2145456F0013E8F5 /* Extras */ = {
 			isa = PBXGroup;
 			children = (
-				DFB5D6082145445C0013E8F5 /* WPTappableLabel.h */,
-				DFB5D6092145445C0013E8F5 /* WPHotspotLabel.h */,
-				DFB5D60A2145445C0013E8F5 /* WPAttributedStyleAction.h */,
-				DFB5D60B2145445C0013E8F5 /* WPHotspotLabel.m */,
-				DFB5D60C2145445C0013E8F5 /* WPTappableLabel.m */,
-				DFB5D60D2145445C0013E8F5 /* WPAttributedStyleAction.m */,
+				DFB5D61B2145456F0013E8F5 /* WPTappableLabel.h */,
+				DFB5D61C2145456F0013E8F5 /* WPHotspotLabel.h */,
+				DFB5D61D2145456F0013E8F5 /* WPAttributedStyleAction.h */,
+				DFB5D61E2145456F0013E8F5 /* WPHotspotLabel.m */,
+				DFB5D61F2145456F0013E8F5 /* WPTappableLabel.m */,
+				DFB5D6202145456F0013E8F5 /* WPAttributedStyleAction.m */,
 			);
 			path = Extras;
 			sourceTree = "<group>";
@@ -366,12 +366,12 @@
 			files = (
 				DF15F0DA2144190400CA49C4 /* BaseViewController.m in Sources */,
 				DFAC448D214263AA0021B7E0 /* LoginViewController.m in Sources */,
-				DFB5D6102145445D0013E8F5 /* WPHotspotLabel.m in Sources */,
+				DFB5D6232145456F0013E8F5 /* WPHotspotLabel.m in Sources */,
 				DFAC4468214262300021B7E0 /* main.m in Sources */,
-				DFB5D60E2145445D0013E8F5 /* NSString+WPAttributedMarkup.m in Sources */,
-				DFB5D6122145445D0013E8F5 /* WPAttributedStyleAction.m in Sources */,
-				DFB5D60F2145445D0013E8F5 /* NSMutableString+TagReplace.m in Sources */,
-				DFB5D6112145445D0013E8F5 /* WPTappableLabel.m in Sources */,
+				DFB5D6212145456F0013E8F5 /* NSString+WPAttributedMarkup.m in Sources */,
+				DFB5D6252145456F0013E8F5 /* WPAttributedStyleAction.m in Sources */,
+				DFB5D6222145456F0013E8F5 /* NSMutableString+TagReplace.m in Sources */,
+				DFB5D6242145456F0013E8F5 /* WPTappableLabel.m in Sources */,
 				DFEF65842144E5C900B91D76 /* AreaViewController.m in Sources */,
 				DFEF658A2144E7B300B91D76 /* HomeViewController.m in Sources */,
 				DFAC445A214262280021B7E0 /* AppDelegate.m in Sources */,
