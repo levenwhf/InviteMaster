@@ -8,10 +8,11 @@
 
 #import "LoginViewController.h"
 
-
 #import "NSString+WPAttributedMarkup.h"
 #import "WPHotspotLabel.h"
 #import "WPAttributedStyleAction.h"
+
+#import "HomeViewController.h"
 
 @interface LoginViewController ()
 
@@ -150,7 +151,12 @@
 
 - (IBAction)clickNext2:(id)sender
 {
+    HomeViewController *vc = [[UIStoryboard storyboardWithName:@"Home" bundle:nil] instantiateViewControllerWithIdentifier:@"vcHome"];
+
+    UINavigationController *navC = [[UINavigationController alloc]initWithRootViewController:vc];
+    navC.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
     
+    [self presentViewController:navC animated:YES completion:nil];
 }
 
 - (IBAction)clickWeChatLogin:(id)sender
