@@ -23,7 +23,7 @@
 		DFB5D6252145456F0013E8F5 /* WPAttributedStyleAction.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB5D6202145456F0013E8F5 /* WPAttributedStyleAction.m */; };
 		DFEF65842144E5C900B91D76 /* AreaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEF65832144E5C900B91D76 /* AreaViewController.m */; };
 		DFEF65872144E79A00B91D76 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFEF65862144E79A00B91D76 /* Home.storyboard */; };
-		DFEF658A2144E7B300B91D76 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEF65892144E7B300B91D76 /* HomeViewController.m */; };
+		DFF64A9E214644E40088FB8C /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFF64A9C214644E40088FB8C /* HomeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,8 +76,8 @@
 		DFEF65822144E5C900B91D76 /* AreaViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AreaViewController.h; sourceTree = "<group>"; };
 		DFEF65832144E5C900B91D76 /* AreaViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AreaViewController.m; sourceTree = "<group>"; };
 		DFEF65862144E79A00B91D76 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
-		DFEF65882144E7B300B91D76 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
-		DFEF65892144E7B300B91D76 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		DFF64A9B214644E40088FB8C /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		DFF64A9C214644E40088FB8C /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,10 +227,34 @@
 			isa = PBXGroup;
 			children = (
 				DFEF65862144E79A00B91D76 /* Home.storyboard */,
-				DFEF65882144E7B300B91D76 /* HomeViewController.h */,
-				DFEF65892144E7B300B91D76 /* HomeViewController.m */,
+				DFF64A9A214644E40088FB8C /* Controllers */,
+				DFF64A99214644E40088FB8C /* Modes */,
+				DFF64A9D214644E40088FB8C /* Views */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		DFF64A99214644E40088FB8C /* Modes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modes;
+			sourceTree = "<group>";
+		};
+		DFF64A9A214644E40088FB8C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DFF64A9B214644E40088FB8C /* HomeViewController.h */,
+				DFF64A9C214644E40088FB8C /* HomeViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DFF64A9D214644E40088FB8C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -370,10 +394,10 @@
 				DFAC4468214262300021B7E0 /* main.m in Sources */,
 				DFB5D6212145456F0013E8F5 /* NSString+WPAttributedMarkup.m in Sources */,
 				DFB5D6252145456F0013E8F5 /* WPAttributedStyleAction.m in Sources */,
+				DFF64A9E214644E40088FB8C /* HomeViewController.m in Sources */,
 				DFB5D6222145456F0013E8F5 /* NSMutableString+TagReplace.m in Sources */,
 				DFB5D6242145456F0013E8F5 /* WPTappableLabel.m in Sources */,
 				DFEF65842144E5C900B91D76 /* AreaViewController.m in Sources */,
-				DFEF658A2144E7B300B91D76 /* HomeViewController.m in Sources */,
 				DFAC445A214262280021B7E0 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
