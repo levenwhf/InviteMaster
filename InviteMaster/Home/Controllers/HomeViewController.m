@@ -8,7 +8,7 @@
 
 #import "HomeViewController.h"
 
-@interface HomeViewController ()<UICollectionViewDelegate, UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
+@interface HomeViewController ()<UICollectionViewDelegate, UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,UIScrollViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UIView *menuView;
 @property (weak, nonatomic) IBOutlet UIView *changeColorView;
@@ -17,6 +17,11 @@
 @property (weak, nonatomic) IBOutlet UIImageView *imgViewLiwu;
 
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
+
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *constraintMenuTop;
+
+@property (nonatomic, assign) CGFloat lastContentOffset;
+@property (nonatomic, assign)BOOL menuHidden;
 
 @end
 
@@ -41,6 +46,8 @@
 {
     [self changeMenuColor];
     
+    _menuHidden = NO;
+    
     UITapGestureRecognizer *tap1 = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapBangzhu)];
     [_imgViewBangzhu addGestureRecognizer:tap1];
     
@@ -64,6 +71,55 @@
     [self.changeColorView.layer addSublayer:gradientLayer];
 }
 
+- (void)setMenuHidden:(BOOL)menuHidden
+{
+    _menuHidden = menuHidden;
+    
+    if (_menuHidden)
+    {
+//        self.collectionView.frame = CGRectMake(self.collectionView.frame.origin.x,
+//                                               self.collectionView.frame.origin.y,
+//                                               self.collectionView.frame.size.width,
+//                                               self.collectionView.frame.size.height + self.menuView.frame.size.height);
+        
+        [UIView animateWithDuration:0.3 animations:^{
+            
+            self.menuView.frame = CGRectMake(self.menuView.frame.origin.x,
+                                             self.menuView.frame.origin.y - self.menuView.frame.size.height,
+                                             self.menuView.frame.size.width,
+                                             self.menuView.frame.size.height);
+            
+            self.collectionView.frame = CGRectMake(self.collectionView.frame.origin.x,
+                                                   self.collectionView.frame.origin.y - self.menuView.frame.size.height,
+                                                   self.collectionView.frame.size.width,
+                                                   self.collectionView.frame.size.height);
+        } completion:^(BOOL finished) {
+            
+        }];
+    }
+    else
+    {
+//        self.collectionView.frame = CGRectMake(self.collectionView.frame.origin.x,
+//                                               self.collectionView.frame.origin.y,
+//                                               self.collectionView.frame.size.width,
+//                                               self.collectionView.frame.size.height - self.menuView.frame.size.height);
+        
+        [UIView animateWithDuration:0.3 animations:^{
+            self.menuView.frame = CGRectMake(self.menuView.frame.origin.x,
+                                             0,
+                                             self.menuView.frame.size.width,
+                                             self.menuView.frame.size.height);
+            
+            self.collectionView.frame = CGRectMake(self.collectionView.frame.origin.x,
+                                                   self.menuView.frame.size.height,
+                                                   self.collectionView.frame.size.width,
+                                                   self.collectionView.frame.size.height);
+        } completion:^(BOOL finished) {
+            
+        }];
+    }
+}
+
 #pragma mark - event
 
 - (IBAction)clickUser:(id)sender
@@ -84,6 +140,34 @@
 - (void)tapLiwu
 {
     NSLog(@"tap Liwu");
+}
+
+#pragma mark - UIScrollViewDelegate
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    if (scrollView.contentOffset.y < 0 ||
+        scrollView.contentOffset.y > scrollView.contentSize.height - scrollView.frame.size.height)
+    {
+        return;
+    }
+    
+    if (scrollView.contentOffset.y < _lastContentOffset)
+    {
+        if (_menuHidden == YES)
+        {
+            self.menuHidden = NO;
+        }
+    }
+    else if (scrollView. contentOffset.y >_lastContentOffset)
+    {
+        if (_menuHidden == NO)
+        {
+            self.menuHidden = YES;
+        }
+    }
+    
+    _lastContentOffset = scrollView.contentOffset.y;
 }
 
 #pragma mark - UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout

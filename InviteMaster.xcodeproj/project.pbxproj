@@ -24,6 +24,7 @@
 		DFEF65842144E5C900B91D76 /* AreaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEF65832144E5C900B91D76 /* AreaViewController.m */; };
 		DFEF65872144E79A00B91D76 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFEF65862144E79A00B91D76 /* Home.storyboard */; };
 		DFF64A9E214644E40088FB8C /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFF64A9C214644E40088FB8C /* HomeViewController.m */; };
+		DFF64AA1214645B20088FB8C /* HomeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DFF64AA0214645B20088FB8C /* HomeCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,8 @@
 		DFEF65862144E79A00B91D76 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		DFF64A9B214644E40088FB8C /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		DFF64A9C214644E40088FB8C /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		DFF64A9F214645B20088FB8C /* HomeCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeCollectionViewCell.h; sourceTree = "<group>"; };
+		DFF64AA0214645B20088FB8C /* HomeCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -253,6 +256,8 @@
 		DFF64A9D214644E40088FB8C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				DFF64A9F214645B20088FB8C /* HomeCollectionViewCell.h */,
+				DFF64AA0214645B20088FB8C /* HomeCollectionViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -399,6 +404,7 @@
 				DFB5D6242145456F0013E8F5 /* WPTappableLabel.m in Sources */,
 				DFEF65842144E5C900B91D76 /* AreaViewController.m in Sources */,
 				DFAC445A214262280021B7E0 /* AppDelegate.m in Sources */,
+				DFF64AA1214645B20088FB8C /* HomeCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -571,6 +577,7 @@
 				DEVELOPMENT_TEAM = 9TPT55BMW7;
 				GCC_PREFIX_HEADER = InviteMaster/BaseClass/PrefixHeader.pch;
 				INFOPLIST_FILE = InviteMaster/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -589,6 +596,7 @@
 				DEVELOPMENT_TEAM = 9TPT55BMW7;
 				GCC_PREFIX_HEADER = InviteMaster/BaseClass/PrefixHeader.pch;
 				INFOPLIST_FILE = InviteMaster/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
