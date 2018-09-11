@@ -13,6 +13,7 @@
 #import "WPAttributedStyleAction.h"
 
 #import "HomeViewController.h"
+#import "HomePageViewController.h"
 
 @interface LoginViewController ()
 
@@ -151,7 +152,8 @@
 
 - (IBAction)clickNext2:(id)sender
 {
-    HomeViewController *vc = [[UIStoryboard storyboardWithName:@"Home" bundle:nil] instantiateViewControllerWithIdentifier:@"vcHome"];
+//    HomeViewController *vc = [[UIStoryboard storyboardWithName:@"Home" bundle:nil] instantiateViewControllerWithIdentifier:@"vcHome"];
+    HomePageViewController *vc = [[UIStoryboard storyboardWithName:@"Home" bundle:nil] instantiateViewControllerWithIdentifier:@"vcHomePage"];
 
     UINavigationController *navC = [[UINavigationController alloc]initWithRootViewController:vc];
     navC.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;

@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		DF15F0DA2144190400CA49C4 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF15F0D92144190400CA49C4 /* BaseViewController.m */; };
+		DF58EFE5214763A900D238CB /* HomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF58EFE4214763A900D238CB /* HomePageViewController.m */; };
+		DF58EFEC2147AC2000D238CB /* Mine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF58EFEB2147AC2000D238CB /* Mine.storyboard */; };
+		DF58EFEF2147AC6900D238CB /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF58EFEE2147AC6900D238CB /* MineViewController.m */; };
+		DF58EFF32147C66800D238CB /* MineTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DF58EFF22147C66800D238CB /* MineTableViewCell.m */; };
 		DFAC445A214262280021B7E0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DFAC4459214262280021B7E0 /* AppDelegate.m */; };
 		DFAC4460214262280021B7E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFAC445E214262280021B7E0 /* Main.storyboard */; };
 		DFAC4462214262300021B7E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFAC4461214262300021B7E0 /* Assets.xcassets */; };
@@ -48,6 +52,13 @@
 		DF15F0D82144190400CA49C4 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		DF15F0D92144190400CA49C4 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		DF15F0DB2144193800CA49C4 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		DF58EFE3214763A900D238CB /* HomePageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomePageViewController.h; sourceTree = "<group>"; };
+		DF58EFE4214763A900D238CB /* HomePageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomePageViewController.m; sourceTree = "<group>"; };
+		DF58EFEB2147AC2000D238CB /* Mine.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Mine.storyboard; sourceTree = "<group>"; };
+		DF58EFED2147AC6900D238CB /* MineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
+		DF58EFEE2147AC6900D238CB /* MineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
+		DF58EFF12147C66800D238CB /* MineTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineTableViewCell.h; sourceTree = "<group>"; };
+		DF58EFF22147C66800D238CB /* MineTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineTableViewCell.m; sourceTree = "<group>"; };
 		DFAC4455214262280021B7E0 /* InviteMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InviteMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFAC4458214262280021B7E0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DFAC4459214262280021B7E0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -118,6 +129,42 @@
 			path = BaseClass;
 			sourceTree = "<group>";
 		};
+		DF58EFE72147ABDB00D238CB /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				DF58EFEB2147AC2000D238CB /* Mine.storyboard */,
+				DF58EFE82147ABDB00D238CB /* Controllers */,
+				DF58EFE92147ABDB00D238CB /* Modes */,
+				DF58EFEA2147ABDB00D238CB /* Views */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		DF58EFE82147ABDB00D238CB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DF58EFED2147AC6900D238CB /* MineViewController.h */,
+				DF58EFEE2147AC6900D238CB /* MineViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DF58EFE92147ABDB00D238CB /* Modes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modes;
+			sourceTree = "<group>";
+		};
+		DF58EFEA2147ABDB00D238CB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DF58EFF12147C66800D238CB /* MineTableViewCell.h */,
+				DF58EFF22147C66800D238CB /* MineTableViewCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		DFAC444C214262280021B7E0 = {
 			isa = PBXGroup;
 			children = (
@@ -141,10 +188,11 @@
 		DFAC4457214262280021B7E0 /* InviteMaster */ = {
 			isa = PBXGroup;
 			children = (
-				DFB5D613214545500013E8F5 /* ThirdFiles */,
+				DF58EFE72147ABDB00D238CB /* Mine */,
 				DFEF65852144E78800B91D76 /* Home */,
-				DF15F0D7214418E500CA49C4 /* BaseClass */,
 				DFAC448A214263920021B7E0 /* Login */,
+				DF15F0D7214418E500CA49C4 /* BaseClass */,
+				DFB5D613214545500013E8F5 /* ThirdFiles */,
 				DFAC4458214262280021B7E0 /* AppDelegate.h */,
 				DFAC4459214262280021B7E0 /* AppDelegate.m */,
 				DFAC445E214262280021B7E0 /* Main.storyboard */,
@@ -249,6 +297,8 @@
 			children = (
 				DFF64A9B214644E40088FB8C /* HomeViewController.h */,
 				DFF64A9C214644E40088FB8C /* HomeViewController.m */,
+				DF58EFE3214763A900D238CB /* HomePageViewController.h */,
+				DF58EFE4214763A900D238CB /* HomePageViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -367,6 +417,7 @@
 			files = (
 				DFAC4465214262300021B7E0 /* LaunchScreen.storyboard in Resources */,
 				DFAC4462214262300021B7E0 /* Assets.xcassets in Resources */,
+				DF58EFEC2147AC2000D238CB /* Mine.storyboard in Resources */,
 				DFAC4460214262280021B7E0 /* Main.storyboard in Resources */,
 				DFEF65872144E79A00B91D76 /* Home.storyboard in Resources */,
 			);
@@ -394,11 +445,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF15F0DA2144190400CA49C4 /* BaseViewController.m in Sources */,
+				DF58EFEF2147AC6900D238CB /* MineViewController.m in Sources */,
 				DFAC448D214263AA0021B7E0 /* LoginViewController.m in Sources */,
 				DFB5D6232145456F0013E8F5 /* WPHotspotLabel.m in Sources */,
 				DFAC4468214262300021B7E0 /* main.m in Sources */,
 				DFB5D6212145456F0013E8F5 /* NSString+WPAttributedMarkup.m in Sources */,
 				DFB5D6252145456F0013E8F5 /* WPAttributedStyleAction.m in Sources */,
+				DF58EFF32147C66800D238CB /* MineTableViewCell.m in Sources */,
+				DF58EFE5214763A900D238CB /* HomePageViewController.m in Sources */,
 				DFF64A9E214644E40088FB8C /* HomeViewController.m in Sources */,
 				DFB5D6222145456F0013E8F5 /* NSMutableString+TagReplace.m in Sources */,
 				DFB5D6242145456F0013E8F5 /* WPTappableLabel.m in Sources */,
