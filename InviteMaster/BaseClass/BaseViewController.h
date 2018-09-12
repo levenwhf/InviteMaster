@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+#define TitleWidth 180
+
 @interface BaseViewController : UIViewController
+
+@property (strong, nonatomic) UIView *navView;
+@property (strong, nonatomic) UILabel *lblTitle;
+@property (strong, nonatomic) UIButton *btnLeft;
+//@property (strong, nonatomic) UIButton *btnRight;
 
 @end

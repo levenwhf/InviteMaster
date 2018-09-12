@@ -12,6 +12,8 @@
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 
+#import "BaseNavController.h"
+
 #define Screen_Width [UIScreen mainScreen].bounds.size.width
 
 #define BaseNavBarColor [UIColor colorWithRed:255/255.f green:34/255.f blue:105/255.f alpha:1]

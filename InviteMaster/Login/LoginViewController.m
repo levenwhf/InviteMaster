@@ -155,7 +155,7 @@
 //    HomeViewController *vc = [[UIStoryboard storyboardWithName:@"Home" bundle:nil] instantiateViewControllerWithIdentifier:@"vcHome"];
     HomePageViewController *vc = [[UIStoryboard storyboardWithName:@"Home" bundle:nil] instantiateViewControllerWithIdentifier:@"vcHomePage"];
 
-    UINavigationController *navC = [[UINavigationController alloc]initWithRootViewController:vc];
+    BaseNavController *navC = [[BaseNavController alloc]initWithRootViewController:vc];
     navC.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
     
     [self presentViewController:navC animated:YES completion:nil];

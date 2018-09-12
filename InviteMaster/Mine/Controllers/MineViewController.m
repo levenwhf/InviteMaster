@@ -8,14 +8,15 @@
 
 #import "MineViewController.h"
 #import "MineTableViewCell.h"
+#import "SettingViewController.h"
 
 @interface MineViewController ()<UITableViewDelegate,UITableViewDataSource,UIImagePickerControllerDelegate,UINavigationControllerDelegate>
 
-@property (weak, nonatomic) IBOutlet UIView *navView;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UIView *tableTopView;
 @property (weak, nonatomic) IBOutlet UIImageView *imgViewUserHeader;
 @property (weak, nonatomic) IBOutlet UILabel *lblUserName;
+@property (weak, nonatomic) IBOutlet UIButton *btnVip;
 
 @property (nonatomic, strong) UIImageView *headImageView;
 @property (nonatomic, strong) UIView *foreView;
@@ -55,6 +56,12 @@
 
 - (void)setupUI
 {
+    self.navView.backgroundColor = [UIColor colorWithWhite:1 alpha:0];
+    
+    _imgViewUserHeader.layer.cornerRadius = _imgViewUserHeader.frame.size.height / 2;
+    _imgViewUserHeader.contentMode = UIViewContentModeScaleAspectFill;
+    _imgViewUserHeader.layer.masksToBounds = YES;
+    
     [self.view addSubview:self.headImageView];
     [self.view sendSubviewToBack:self.headImageView];
     
@@ -88,6 +95,13 @@
     return _headImageView;
 }
 
+#pragma mark - event
+
+- (IBAction)clickVip:(id)sender
+{
+    NSLog(@"click vip");
+}
+
 #pragma mark - UIScrollViewDegete
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
@@ -112,20 +126,20 @@
     
     _foreView.frame = CGRectMake(0, _headImageView.frame.size.height - 30, Screen_Width, 60);
     
-    if (yOffset <= 0)
-    {
-        _navView.alpha = 0;
-    }
-    else if (yOffset > 0 && yOffset < 64)
-    {
-        float alpha = yOffset / 64;
-        
-        _navView.alpha = alpha;
-    }
-    else if (yOffset >= 64)
-    {
-        _navView.alpha = 1;
-    }
+//    if (yOffset <= 0)
+//    {
+//        _navView.backgroundColor = [UIColor colorWithWhite:1 alpha:0];
+//    }
+//    else if (yOffset > 0 && yOffset < 160)
+//    {
+//        float alpha = yOffset / 160;
+//
+//        _navView.backgroundColor = [UIColor colorWithWhite:1 alpha:alpha];
+//    }
+//    else if (yOffset >= 160)
+//    {
+//        _navView.backgroundColor = [UIColor colorWithWhite:1 alpha:1];
+//    }
 }
 
 #pragma mark - UITableViewDelegate,UITableViewDataSource
@@ -147,7 +161,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
 {
-    return 10;
+    return 0.1f;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -162,19 +176,19 @@
     cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     if (indexPath.row == 0)
     {
-        [cell setIcon:[UIImage imageNamed:@""] Title:@"钱包" HasNewIcon:NO];
+        [cell setIcon:[UIImage imageNamed:@"icon_wallet"] Title:@"钱包" HasNewIcon:NO];
     }
     else if (indexPath.row == 1)
     {
-        [cell setIcon:[UIImage imageNamed:@""] Title:@"设置" HasNewIcon:NO];
+        [cell setIcon:[UIImage imageNamed:@"icon_setting"] Title:@"设置" HasNewIcon:NO];
     }
     else if (indexPath.row == 2)
     {
-        [cell setIcon:[UIImage imageNamed:@""] Title:@"结婚筹备" HasNewIcon:YES];
+        [cell setIcon:[UIImage imageNamed:@"icon_ring"] Title:@"结婚筹备" HasNewIcon:YES];
     }
     else if (indexPath.row == 3)
     {
-        [cell setIcon:[UIImage imageNamed:@""] Title:@"联系客服" HasNewIcon:NO];
+        [cell setIcon:[UIImage imageNamed:@"icon_headset"] Title:@"联系客服" HasNewIcon:NO];
     }
     
     if (cell == nil)
@@ -183,6 +197,29 @@
     }
     
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:indexPath];
+    
+    if (indexPath.row == 0)
+    {
+        
+    }
+    else if (indexPath.row == 1)
+    {
+        SettingViewController *vc = [SettingViewController newSettingVC];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
+    else if (indexPath.row == 2)
+    {
+        
+    }
+    else if (indexPath.row == 3)
+    {
+        
+    }
 }
 
 @end

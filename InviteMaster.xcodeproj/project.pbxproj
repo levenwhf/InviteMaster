@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		DF15F0DA2144190400CA49C4 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF15F0D92144190400CA49C4 /* BaseViewController.m */; };
+		DF27112321490D3F0008611A /* BaseNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF27112221490D3F0008611A /* BaseNavController.m */; };
+		DF271126214917450008611A /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF271125214917450008611A /* SettingViewController.m */; };
 		DF58EFE5214763A900D238CB /* HomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF58EFE4214763A900D238CB /* HomePageViewController.m */; };
 		DF58EFEC2147AC2000D238CB /* Mine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF58EFEB2147AC2000D238CB /* Mine.storyboard */; };
 		DF58EFEF2147AC6900D238CB /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF58EFEE2147AC6900D238CB /* MineViewController.m */; };
@@ -52,6 +54,10 @@
 		DF15F0D82144190400CA49C4 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		DF15F0D92144190400CA49C4 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		DF15F0DB2144193800CA49C4 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		DF27112121490D3F0008611A /* BaseNavController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseNavController.h; sourceTree = "<group>"; };
+		DF27112221490D3F0008611A /* BaseNavController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseNavController.m; sourceTree = "<group>"; };
+		DF271124214917450008611A /* SettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		DF271125214917450008611A /* SettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
 		DF58EFE3214763A900D238CB /* HomePageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomePageViewController.h; sourceTree = "<group>"; };
 		DF58EFE4214763A900D238CB /* HomePageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomePageViewController.m; sourceTree = "<group>"; };
 		DF58EFEB2147AC2000D238CB /* Mine.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Mine.storyboard; sourceTree = "<group>"; };
@@ -125,6 +131,8 @@
 				DF15F0DB2144193800CA49C4 /* PrefixHeader.pch */,
 				DF15F0D82144190400CA49C4 /* BaseViewController.h */,
 				DF15F0D92144190400CA49C4 /* BaseViewController.m */,
+				DF27112121490D3F0008611A /* BaseNavController.h */,
+				DF27112221490D3F0008611A /* BaseNavController.m */,
 			);
 			path = BaseClass;
 			sourceTree = "<group>";
@@ -145,6 +153,8 @@
 			children = (
 				DF58EFED2147AC6900D238CB /* MineViewController.h */,
 				DF58EFEE2147AC6900D238CB /* MineViewController.m */,
+				DF271124214917450008611A /* SettingViewController.h */,
+				DF271125214917450008611A /* SettingViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -446,6 +456,8 @@
 			files = (
 				DF15F0DA2144190400CA49C4 /* BaseViewController.m in Sources */,
 				DF58EFEF2147AC6900D238CB /* MineViewController.m in Sources */,
+				DF271126214917450008611A /* SettingViewController.m in Sources */,
+				DF27112321490D3F0008611A /* BaseNavController.m in Sources */,
 				DFAC448D214263AA0021B7E0 /* LoginViewController.m in Sources */,
 				DFB5D6232145456F0013E8F5 /* WPHotspotLabel.m in Sources */,
 				DFAC4468214262300021B7E0 /* main.m in Sources */,

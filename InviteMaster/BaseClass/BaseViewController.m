@@ -10,13 +10,16 @@
 
 @interface BaseViewController ()
 
+
 @end
 
 @implementation BaseViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    [self setupNavView];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -28,23 +31,76 @@
 {
     [super viewWillAppear:animated];
     
-    //设置导航栏不隐藏
-    [self.navigationController setNavigationBarHidden:NO animated:YES];
-    //设置导航栏背景色
-    self.navigationController.navigationBar.barTintColor = BaseNavBarColor;
-    //设置导航栏不透明
-    self.navigationController.navigationBar.translucent = NO;
-    //设置顶部状态栏字体颜色
-    self.navigationController.navigationBar.barStyle = UIStatusBarStyleLightContent;
-    
-    //设置导航栏标题字体
-//    self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName:[UIColor blackColor]};
-    //设置导航栏左右按钮颜色
-    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
-    
-//    [self.navigationController.navigationBar setBackgroundImage:nil forBarMetrics:UIBarMetricsDefault];
-    
+    //设置导航栏隐藏
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleDefault;
 }
 
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+
+    [self.view bringSubviewToFront:self.navView];
+}
+
+- (void)setupNavView
+{
+    [self.view addSubview:self.navView];
+    [self.navView addSubview:self.lblTitle];
+    [self.navView addSubview:self.btnLeft];
+}
+
+- (UIView *)navView
+{
+    if (_navView == nil)
+    {
+        _navView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, Screen_Width, 64)];
+        _navView.backgroundColor = [UIColor whiteColor];
+    }
+    return _navView;
+}
+
+- (UILabel *)lblTitle
+{
+    if (_lblTitle == nil)
+    {
+        _lblTitle = [[UILabel alloc]initWithFrame:CGRectMake((Screen_Width - TitleWidth) / 2, 20, TitleWidth, 44)];
+        
+        _lblTitle.textAlignment = NSTextAlignmentCenter;
+        _lblTitle.font = [UIFont boldSystemFontOfSize:17];
+        _lblTitle.textColor = [UIColor blackColor];
+    }
+    
+    return _lblTitle;
+}
+
+- (UIButton *)btnLeft
+{
+    if (_btnLeft == nil)
+    {
+        _btnLeft = [[UIButton alloc]initWithFrame:CGRectMake(0, 20, 46, 44)];
+        
+        [_btnLeft setImage:[UIImage imageNamed:@"nav_back"] forState:UIControlStateNormal];
+        
+        [_btnLeft addTarget:self action:@selector(clickLeftBtn) forControlEvents:UIControlEventTouchUpInside];
+    }
+    
+    return _btnLeft;
+}
+
+- (void)clickLeftBtn
+{
+    if (self.navigationController != nil)
+    {
+        [self.navigationController popViewControllerAnimated:YES];
+    }
+}
+
+- (void)setTitle:(NSString *)title
+{
+    [super setTitle:title];
+    
+    _lblTitle.text = title;
+}
 
 @end
