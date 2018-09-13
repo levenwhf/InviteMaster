@@ -17,4 +17,6 @@
 @property (strong, nonatomic) UIButton *btnLeft;
 //@property (strong, nonatomic) UIButton *btnRight;
 
+@property (nonatomic, retain) UIColor *navTintColor;
+
 @end

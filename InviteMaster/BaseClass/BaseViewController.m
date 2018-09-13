@@ -33,7 +33,7 @@
     
     //设置导航栏隐藏
     [self.navigationController setNavigationBarHidden:YES animated:YES];
-    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleDefault;
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -55,7 +55,7 @@
     if (_navView == nil)
     {
         _navView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, Screen_Width, 64)];
-        _navView.backgroundColor = [UIColor whiteColor];
+        _navView.backgroundColor = BaseNavBarColor;
     }
     return _navView;
 }
@@ -68,7 +68,7 @@
         
         _lblTitle.textAlignment = NSTextAlignmentCenter;
         _lblTitle.font = [UIFont boldSystemFontOfSize:17];
-        _lblTitle.textColor = [UIColor blackColor];
+        _lblTitle.textColor = [UIColor whiteColor];
     }
     
     return _lblTitle;
@@ -80,9 +80,12 @@
     {
         _btnLeft = [[UIButton alloc]initWithFrame:CGRectMake(0, 20, 46, 44)];
         
-        [_btnLeft setImage:[UIImage imageNamed:@"nav_back"] forState:UIControlStateNormal];
+        [_btnLeft setImage:[[UIImage imageNamed:@"nav_back"]imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate] forState:UIControlStateNormal];
+        _btnLeft.tintColor = [UIColor whiteColor];
         
         [_btnLeft addTarget:self action:@selector(clickLeftBtn) forControlEvents:UIControlEventTouchUpInside];
+        
+        
     }
     
     return _btnLeft;
@@ -94,6 +97,12 @@
     {
         [self.navigationController popViewControllerAnimated:YES];
     }
+}
+
+- (void)setNavTintColor:(UIColor *)navTintColor
+{
+    _btnLeft.tintColor = navTintColor;
+    _lblTitle.textColor = navTintColor;
 }
 
 - (void)setTitle:(NSString *)title

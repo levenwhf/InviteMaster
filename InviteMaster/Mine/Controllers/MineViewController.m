@@ -9,6 +9,7 @@
 #import "MineViewController.h"
 #import "MineTableViewCell.h"
 #import "SettingViewController.h"
+#import "WalletViewController.h"
 
 @interface MineViewController ()<UITableViewDelegate,UITableViewDataSource,UIImagePickerControllerDelegate,UINavigationControllerDelegate>
 
@@ -57,6 +58,7 @@
 - (void)setupUI
 {
     self.navView.backgroundColor = [UIColor colorWithWhite:1 alpha:0];
+    [self setNavTintColor:BaseNavBarColor];
     
     _imgViewUserHeader.layer.cornerRadius = _imgViewUserHeader.frame.size.height / 2;
     _imgViewUserHeader.contentMode = UIViewContentModeScaleAspectFill;
@@ -146,12 +148,16 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 1;
+    return 2;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 4;
+    if (section == 0)
+    {
+        return 4;
+    }
+    return 1;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
@@ -172,23 +178,29 @@
 - (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     MineTableViewCell *cell;
-    
-    cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
-    if (indexPath.row == 0)
+    if (indexPath.section == 0)
     {
-        [cell setIcon:[UIImage imageNamed:@"icon_wallet"] Title:@"钱包" HasNewIcon:NO];
+        cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
+        if (indexPath.row == 0)
+        {
+            [cell setIcon:[UIImage imageNamed:@"icon_wallet"] Title:@"钱包" HasNewIcon:NO];
+        }
+        else if (indexPath.row == 1)
+        {
+            [cell setIcon:[UIImage imageNamed:@"icon_setting"] Title:@"设置" HasNewIcon:NO];
+        }
+        else if (indexPath.row == 2)
+        {
+            [cell setIcon:[UIImage imageNamed:@"icon_ring"] Title:@"结婚筹备" HasNewIcon:YES];
+        }
+        else if (indexPath.row == 3)
+        {
+            [cell setIcon:[UIImage imageNamed:@"icon_headset"] Title:@"联系客服" HasNewIcon:NO];
+        }
     }
-    else if (indexPath.row == 1)
+    else if (indexPath.section == 1)
     {
-        [cell setIcon:[UIImage imageNamed:@"icon_setting"] Title:@"设置" HasNewIcon:NO];
-    }
-    else if (indexPath.row == 2)
-    {
-        [cell setIcon:[UIImage imageNamed:@"icon_ring"] Title:@"结婚筹备" HasNewIcon:YES];
-    }
-    else if (indexPath.row == 3)
-    {
-        [cell setIcon:[UIImage imageNamed:@"icon_headset"] Title:@"联系客服" HasNewIcon:NO];
+        cell = [tableView dequeueReusableCellWithIdentifier:@"cellLogout" forIndexPath:indexPath];
     }
     
     if (cell == nil)
@@ -203,22 +215,30 @@
 {
     [tableView deselectRowAtIndexPath:indexPath animated:indexPath];
     
-    if (indexPath.row == 0)
+    if (indexPath.section == 0)
     {
-        
+        if (indexPath.row == 0)
+        {
+            WalletViewController *vc = [WalletViewController newWalletVC];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+        else if (indexPath.row == 1)
+        {
+            SettingViewController *vc = [SettingViewController newSettingVC];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+        else if (indexPath.row == 2)
+        {
+            
+        }
+        else if (indexPath.row == 3)
+        {
+            
+        }
     }
-    else if (indexPath.row == 1)
+    else if (indexPath.section == 1)
     {
-        SettingViewController *vc = [SettingViewController newSettingVC];
-        [self.navigationController pushViewController:vc animated:YES];
-    }
-    else if (indexPath.row == 2)
-    {
-        
-    }
-    else if (indexPath.row == 3)
-    {
-        
+        [self dismissViewControllerAnimated:YES completion:nil];
     }
 }
 

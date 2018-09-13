@@ -14,6 +14,9 @@
 		DF58EFEC2147AC2000D238CB /* Mine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF58EFEB2147AC2000D238CB /* Mine.storyboard */; };
 		DF58EFEF2147AC6900D238CB /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF58EFEE2147AC6900D238CB /* MineViewController.m */; };
 		DF58EFF32147C66800D238CB /* MineTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DF58EFF22147C66800D238CB /* MineTableViewCell.m */; };
+		DF7530AE214A51C800B7FA6C /* BaseInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF7530AD214A51C800B7FA6C /* BaseInfoViewController.m */; };
+		DF7530B4214A57E000B7FA6C /* Wallet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF7530B3214A57E000B7FA6C /* Wallet.storyboard */; };
+		DF7530B7214A596200B7FA6C /* WalletViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF7530B6214A596200B7FA6C /* WalletViewController.m */; };
 		DFAC445A214262280021B7E0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DFAC4459214262280021B7E0 /* AppDelegate.m */; };
 		DFAC4460214262280021B7E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFAC445E214262280021B7E0 /* Main.storyboard */; };
 		DFAC4462214262300021B7E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFAC4461214262300021B7E0 /* Assets.xcassets */; };
@@ -65,6 +68,11 @@
 		DF58EFEE2147AC6900D238CB /* MineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
 		DF58EFF12147C66800D238CB /* MineTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineTableViewCell.h; sourceTree = "<group>"; };
 		DF58EFF22147C66800D238CB /* MineTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineTableViewCell.m; sourceTree = "<group>"; };
+		DF7530AC214A51C800B7FA6C /* BaseInfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseInfoViewController.h; sourceTree = "<group>"; };
+		DF7530AD214A51C800B7FA6C /* BaseInfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseInfoViewController.m; sourceTree = "<group>"; };
+		DF7530B3214A57E000B7FA6C /* Wallet.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Wallet.storyboard; sourceTree = "<group>"; };
+		DF7530B5214A596200B7FA6C /* WalletViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WalletViewController.h; sourceTree = "<group>"; };
+		DF7530B6214A596200B7FA6C /* WalletViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WalletViewController.m; sourceTree = "<group>"; };
 		DFAC4455214262280021B7E0 /* InviteMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InviteMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFAC4458214262280021B7E0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DFAC4459214262280021B7E0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -155,6 +163,8 @@
 				DF58EFEE2147AC6900D238CB /* MineViewController.m */,
 				DF271124214917450008611A /* SettingViewController.h */,
 				DF271125214917450008611A /* SettingViewController.m */,
+				DF7530AC214A51C800B7FA6C /* BaseInfoViewController.h */,
+				DF7530AD214A51C800B7FA6C /* BaseInfoViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -171,6 +181,40 @@
 			children = (
 				DF58EFF12147C66800D238CB /* MineTableViewCell.h */,
 				DF58EFF22147C66800D238CB /* MineTableViewCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DF7530AF214A57CD00B7FA6C /* Wallet */ = {
+			isa = PBXGroup;
+			children = (
+				DF7530B3214A57E000B7FA6C /* Wallet.storyboard */,
+				DF7530B0214A57CD00B7FA6C /* Controllers */,
+				DF7530B1214A57CD00B7FA6C /* Modes */,
+				DF7530B2214A57CD00B7FA6C /* Views */,
+			);
+			path = Wallet;
+			sourceTree = "<group>";
+		};
+		DF7530B0214A57CD00B7FA6C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DF7530B5214A596200B7FA6C /* WalletViewController.h */,
+				DF7530B6214A596200B7FA6C /* WalletViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DF7530B1214A57CD00B7FA6C /* Modes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modes;
+			sourceTree = "<group>";
+		};
+		DF7530B2214A57CD00B7FA6C /* Views */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -198,6 +242,7 @@
 		DFAC4457214262280021B7E0 /* InviteMaster */ = {
 			isa = PBXGroup;
 			children = (
+				DF7530AF214A57CD00B7FA6C /* Wallet */,
 				DF58EFE72147ABDB00D238CB /* Mine */,
 				DFEF65852144E78800B91D76 /* Home */,
 				DFAC448A214263920021B7E0 /* Login */,
@@ -430,6 +475,7 @@
 				DF58EFEC2147AC2000D238CB /* Mine.storyboard in Resources */,
 				DFAC4460214262280021B7E0 /* Main.storyboard in Resources */,
 				DFEF65872144E79A00B91D76 /* Home.storyboard in Resources */,
+				DF7530B4214A57E000B7FA6C /* Wallet.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,6 +503,7 @@
 				DF15F0DA2144190400CA49C4 /* BaseViewController.m in Sources */,
 				DF58EFEF2147AC6900D238CB /* MineViewController.m in Sources */,
 				DF271126214917450008611A /* SettingViewController.m in Sources */,
+				DF7530AE214A51C800B7FA6C /* BaseInfoViewController.m in Sources */,
 				DF27112321490D3F0008611A /* BaseNavController.m in Sources */,
 				DFAC448D214263AA0021B7E0 /* LoginViewController.m in Sources */,
 				DFB5D6232145456F0013E8F5 /* WPHotspotLabel.m in Sources */,
@@ -465,6 +512,7 @@
 				DFB5D6252145456F0013E8F5 /* WPAttributedStyleAction.m in Sources */,
 				DF58EFF32147C66800D238CB /* MineTableViewCell.m in Sources */,
 				DF58EFE5214763A900D238CB /* HomePageViewController.m in Sources */,
+				DF7530B7214A596200B7FA6C /* WalletViewController.m in Sources */,
 				DFF64A9E214644E40088FB8C /* HomeViewController.m in Sources */,
 				DFB5D6222145456F0013E8F5 /* NSMutableString+TagReplace.m in Sources */,
 				DFB5D6242145456F0013E8F5 /* WPTappableLabel.m in Sources */,

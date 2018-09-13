@@ -8,6 +8,7 @@
 
 #import "HomePageViewController.h"
 #import "MineViewController.h"
+#import "WalletViewController.h"
 
 @interface HomePageViewController ()<UICollectionViewDelegate, UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,UIScrollViewDelegate>
 
@@ -165,6 +166,9 @@
 - (void)tapLiwu
 {
     NSLog(@"tap Liwu");
+    
+    WalletViewController *vc = [WalletViewController newWalletVC];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 #pragma mark - UIScrollViewDelegate
