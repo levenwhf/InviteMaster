@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF063AC2214BB4C600B67F02 /* CashCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DF063AC1214BB4C600B67F02 /* CashCell.m */; };
+		DF063AC5214BB4E000B67F02 /* GiftCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DF063AC4214BB4E000B67F02 /* GiftCell.m */; };
 		DF15F0DA2144190400CA49C4 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF15F0D92144190400CA49C4 /* BaseViewController.m */; };
 		DF27112321490D3F0008611A /* BaseNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF27112221490D3F0008611A /* BaseNavController.m */; };
 		DF271126214917450008611A /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF271125214917450008611A /* SettingViewController.m */; };
@@ -54,6 +56,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DF063AC0214BB4C600B67F02 /* CashCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CashCell.h; sourceTree = "<group>"; };
+		DF063AC1214BB4C600B67F02 /* CashCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CashCell.m; sourceTree = "<group>"; };
+		DF063AC3214BB4E000B67F02 /* GiftCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GiftCell.h; sourceTree = "<group>"; };
+		DF063AC4214BB4E000B67F02 /* GiftCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GiftCell.m; sourceTree = "<group>"; };
 		DF15F0D82144190400CA49C4 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		DF15F0D92144190400CA49C4 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		DF15F0DB2144193800CA49C4 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
@@ -215,6 +221,10 @@
 		DF7530B2214A57CD00B7FA6C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				DF063AC0214BB4C600B67F02 /* CashCell.h */,
+				DF063AC1214BB4C600B67F02 /* CashCell.m */,
+				DF063AC3214BB4E000B67F02 /* GiftCell.h */,
+				DF063AC4214BB4E000B67F02 /* GiftCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -512,6 +522,7 @@
 				DFB5D6252145456F0013E8F5 /* WPAttributedStyleAction.m in Sources */,
 				DF58EFF32147C66800D238CB /* MineTableViewCell.m in Sources */,
 				DF58EFE5214763A900D238CB /* HomePageViewController.m in Sources */,
+				DF063AC2214BB4C600B67F02 /* CashCell.m in Sources */,
 				DF7530B7214A596200B7FA6C /* WalletViewController.m in Sources */,
 				DFF64A9E214644E40088FB8C /* HomeViewController.m in Sources */,
 				DFB5D6222145456F0013E8F5 /* NSMutableString+TagReplace.m in Sources */,
@@ -519,6 +530,7 @@
 				DFEF65842144E5C900B91D76 /* AreaViewController.m in Sources */,
 				DFAC445A214262280021B7E0 /* AppDelegate.m in Sources */,
 				DFF64AA1214645B20088FB8C /* HomeCollectionViewCell.m in Sources */,
+				DF063AC5214BB4E000B67F02 /* GiftCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
