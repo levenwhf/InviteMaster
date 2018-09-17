@@ -15,7 +15,8 @@
 @property (strong, nonatomic) UIView *navView;
 @property (strong, nonatomic) UILabel *lblTitle;
 @property (strong, nonatomic) UIButton *btnLeft;
-//@property (strong, nonatomic) UIButton *btnRight;
+
+- (void)setRightButtonTitle:(NSString *)rightButtonTitle Target:(id)target Action:(SEL)action;
 
 @property (nonatomic, retain) UIColor *navTintColor;
 

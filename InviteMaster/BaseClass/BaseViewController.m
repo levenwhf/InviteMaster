@@ -10,6 +10,7 @@
 
 @interface BaseViewController ()
 
+@property (nonatomic, strong)UIButton *rightButton;
 
 @end
 
@@ -45,6 +46,8 @@
 
 - (void)setupNavView
 {
+    _navTintColor = [UIColor whiteColor];
+    
     [self.view addSubview:self.navView];
     [self.navView addSubview:self.lblTitle];
     [self.navView addSubview:self.btnLeft];
@@ -68,10 +71,25 @@
         
         _lblTitle.textAlignment = NSTextAlignmentCenter;
         _lblTitle.font = [UIFont boldSystemFontOfSize:17];
-        _lblTitle.textColor = [UIColor whiteColor];
+        _lblTitle.textColor = _navTintColor;
     }
     
     return _lblTitle;
+}
+
+- (void)setRightButtonTitle:(NSString *)rightButtonTitle Target:(id)target Action:(SEL)action
+{
+    if (_rightButton == nil)
+    {
+        _rightButton = [[UIButton alloc]initWithFrame:CGRectMake(Screen_Width - 80, 20, 80, 44)];
+        _rightButton.titleLabel.font = [UIFont systemFontOfSize:14];
+        [_rightButton setTitleColor:_navTintColor forState:UIControlStateNormal];
+        [self.navView addSubview:_rightButton];
+    }
+    [_rightButton setTitle:rightButtonTitle forState:UIControlStateNormal];
+    
+    [_rightButton removeTarget:target action:nil forControlEvents:UIControlEventTouchUpInside];
+    [_rightButton addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
 }
 
 - (UIButton *)btnLeft
@@ -81,11 +99,9 @@
         _btnLeft = [[UIButton alloc]initWithFrame:CGRectMake(0, 20, 46, 44)];
         
         [_btnLeft setImage:[[UIImage imageNamed:@"nav_back"]imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate] forState:UIControlStateNormal];
-        _btnLeft.tintColor = [UIColor whiteColor];
+        _btnLeft.tintColor = self.navTintColor;
         
         [_btnLeft addTarget:self action:@selector(clickLeftBtn) forControlEvents:UIControlEventTouchUpInside];
-        
-        
     }
     
     return _btnLeft;
@@ -101,8 +117,15 @@
 
 - (void)setNavTintColor:(UIColor *)navTintColor
 {
-    _btnLeft.tintColor = navTintColor;
-    _lblTitle.textColor = navTintColor;
+    _navTintColor = navTintColor;
+    
+    _btnLeft.tintColor = _navTintColor;
+    _lblTitle.textColor = _navTintColor;
+    
+    if (_rightButton != nil)
+    {
+        [_rightButton setTitleColor:_navTintColor forState:UIControlStateNormal];
+    }
 }
 
 - (void)setTitle:(NSString *)title

@@ -9,6 +9,7 @@
 #import "HomePageViewController.h"
 #import "MineViewController.h"
 #import "WalletViewController.h"
+#import "HelpViewController.h"
 
 @interface HomePageViewController ()<UICollectionViewDelegate, UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,UIScrollViewDelegate>
 
@@ -156,6 +157,10 @@
 - (void)tapBangzhu
 {
     NSLog(@"tap Bangzhu");
+    
+    HelpViewController *vc = [HelpViewController newHelpVC];
+    
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)tapBinke

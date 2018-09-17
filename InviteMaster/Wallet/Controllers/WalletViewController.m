@@ -7,10 +7,13 @@
 //
 
 #import "WalletViewController.h"
+#import "BalanceViewController.h"
 #import "CashCell.h"
 
 #define StyleColor [UIColor colorWithRed:236/255.f green:77/255.f blue:114/255.f alpha:1]
 #define StyleColorLight [UIColor colorWithRed:236/255.f green:120/255.f blue:150/255.f alpha:1]
+
+#define TipViewHeight 100
 
 @interface WalletViewController ()<UITableViewDelegate,UITableViewDataSource, UIScrollViewDelegate>
 
@@ -64,6 +67,13 @@
     [self setupUI];
 }
 
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+    [self makeData];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -82,6 +92,8 @@
     self.navView.backgroundColor = [UIColor clearColor];
     self.title = @"请帖大师";
     
+    [self setRightButtonTitle:@"查看余额" Target:self Action:@selector(clickBalance)];
+    
     self.countMoney = 88.88;
     self.tabIndex = 1;
     
@@ -93,17 +105,12 @@
     
     UITapGestureRecognizer *tap2 = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapGiftTab)];
     [_giftView addGestureRecognizer:tap2];
-    
+
     self.scrollView.delegate = self;
     self.tableView1.delegate = self;
     self.tableView1.dataSource = self;
     self.tableView2.delegate = self;
     self.tableView2.dataSource = self;
-    
-    self.tableView1.tableHeaderView = self.tipView1;
-    self.tableView2.tableHeaderView = self.tipView2;
-    
-    [self makeData];
 }
 
 - (void)setCountMoney:(CGFloat)countMoney
@@ -188,9 +195,10 @@
 {
     if (_tipView1 == nil)
     {
-        _tipView1 = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 0, 100)];
+        _tipView1 = [[UIView alloc]initWithFrame:CGRectMake(0, 0, self.tableView1.frame.size.width, TipViewHeight)];
+        _tipView1.layer.masksToBounds = YES;
         
-        UILabel *lblTip = [[UILabel alloc]initWithFrame:CGRectMake(0, 20, self.tableView1.frame.size.width, 26)];
+        UILabel *lblTip = [[UILabel alloc]initWithFrame:CGRectMake(0, 20, _tipView1.frame.size.width, 26)];
         lblTip.text = @"还未收到小伙伴赠送的礼物？";
         lblTip.textColor = [UIColor darkGrayColor];
         lblTip.font = [UIFont systemFontOfSize:13];
@@ -214,9 +222,10 @@
 {
     if (_tipView2 == nil)
     {
-        _tipView2 = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 0, 100)];
+        _tipView2 = [[UIView alloc]initWithFrame:CGRectMake(0, 0, self.tableView2.frame.size.width, 100)];
+        _tipView2.layer.masksToBounds = YES;
         
-        UILabel *lblTip = [[UILabel alloc]initWithFrame:CGRectMake(0, 20, self.tableView1.frame.size.width, 26)];
+        UILabel *lblTip = [[UILabel alloc]initWithFrame:CGRectMake(0, 20, _tipView2.frame.size.width, 26)];
         lblTip.text = @"还未收到小伙伴赠送的礼物？";
         lblTip.textColor = [UIColor darkGrayColor];
         lblTip.font = [UIFont systemFontOfSize:13];
@@ -265,22 +274,31 @@
     [self.dataList1 addObject:@""];
     [self.dataList1 addObject:@""];
     
+    [self reloadData];
+}
+
+- (void)reloadData
+{
     if (self.dataList1.count == 0)
     {
+        self.tipView1.frame = CGRectMake(0, 0, self.tableView1.frame.size.width, TipViewHeight);
         self.tableView1.tableHeaderView = self.tipView1;
     }
     else
     {
-        self.tableView1.tableHeaderView = nil;
+        self.tipView1.frame = CGRectMake(0, 0, self.tableView1.frame.size.width, 0.1f);
+        self.tableView1.tableHeaderView = self.tipView1;
     }
-    
+
     if (self.dataList2.count == 0)
     {
+        self.tipView2.frame = CGRectMake(0, 0, self.tableView2.frame.size.width, TipViewHeight);
         self.tableView2.tableHeaderView = self.tipView2;
     }
     else
     {
-        self.tableView2.tableHeaderView = nil;
+        self.tipView2.frame = CGRectMake(0, 0, self.tableView2.frame.size.width, 0.1f);
+        self.tableView2.tableHeaderView = self.tipView2;
     }
     
     [self.tableView1 reloadData];
@@ -304,12 +322,15 @@
     self.tabIndex = 2;
 }
 
-#pragma mark - UITableViewDelegate,UITableViewDataSource
-
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+- (void)clickBalance
 {
-    return 66;
+    NSLog(@"click balance");
+    
+    BalanceViewController *vc = [BalanceViewController newBalanceVC];
+    [self.navigationController pushViewController:vc animated:YES];
 }
+
+#pragma mark - UIScrollViewDelegate
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
 {
@@ -328,6 +349,18 @@
             [self setGiftLight:YES];
         }
     }
+}
+
+#pragma mark - UITableViewDelegate,UITableViewDataSource
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    return 0.1f;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 66;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section

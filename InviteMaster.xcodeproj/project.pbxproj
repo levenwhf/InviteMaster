@@ -19,6 +19,9 @@
 		DF7530AE214A51C800B7FA6C /* BaseInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF7530AD214A51C800B7FA6C /* BaseInfoViewController.m */; };
 		DF7530B4214A57E000B7FA6C /* Wallet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF7530B3214A57E000B7FA6C /* Wallet.storyboard */; };
 		DF7530B7214A596200B7FA6C /* WalletViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF7530B6214A596200B7FA6C /* WalletViewController.m */; };
+		DF756398214F56D900BAF727 /* Help.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF756397214F56D900BAF727 /* Help.storyboard */; };
+		DF75639B214F5F3700BAF727 /* HelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF75639A214F5F3700BAF727 /* HelpViewController.m */; };
+		DF75639E214FAB5A00BAF727 /* BalanceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF75639D214FAB5A00BAF727 /* BalanceViewController.m */; };
 		DFAC445A214262280021B7E0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DFAC4459214262280021B7E0 /* AppDelegate.m */; };
 		DFAC4460214262280021B7E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFAC445E214262280021B7E0 /* Main.storyboard */; };
 		DFAC4462214262300021B7E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFAC4461214262300021B7E0 /* Assets.xcassets */; };
@@ -79,6 +82,11 @@
 		DF7530B3214A57E000B7FA6C /* Wallet.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Wallet.storyboard; sourceTree = "<group>"; };
 		DF7530B5214A596200B7FA6C /* WalletViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WalletViewController.h; sourceTree = "<group>"; };
 		DF7530B6214A596200B7FA6C /* WalletViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WalletViewController.m; sourceTree = "<group>"; };
+		DF756397214F56D900BAF727 /* Help.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Help.storyboard; sourceTree = "<group>"; };
+		DF756399214F5F3700BAF727 /* HelpViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelpViewController.h; sourceTree = "<group>"; };
+		DF75639A214F5F3700BAF727 /* HelpViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelpViewController.m; sourceTree = "<group>"; };
+		DF75639C214FAB5A00BAF727 /* BalanceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BalanceViewController.h; sourceTree = "<group>"; };
+		DF75639D214FAB5A00BAF727 /* BalanceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BalanceViewController.m; sourceTree = "<group>"; };
 		DFAC4455214262280021B7E0 /* InviteMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InviteMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFAC4458214262280021B7E0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DFAC4459214262280021B7E0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -207,6 +215,8 @@
 			children = (
 				DF7530B5214A596200B7FA6C /* WalletViewController.h */,
 				DF7530B6214A596200B7FA6C /* WalletViewController.m */,
+				DF75639C214FAB5A00BAF727 /* BalanceViewController.h */,
+				DF75639D214FAB5A00BAF727 /* BalanceViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -225,6 +235,40 @@
 				DF063AC1214BB4C600B67F02 /* CashCell.m */,
 				DF063AC3214BB4E000B67F02 /* GiftCell.h */,
 				DF063AC4214BB4E000B67F02 /* GiftCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DF756393214F56C900BAF727 /* Help */ = {
+			isa = PBXGroup;
+			children = (
+				DF756397214F56D900BAF727 /* Help.storyboard */,
+				DF756394214F56C900BAF727 /* Controllers */,
+				DF756395214F56C900BAF727 /* Modes */,
+				DF756396214F56C900BAF727 /* Views */,
+			);
+			path = Help;
+			sourceTree = "<group>";
+		};
+		DF756394214F56C900BAF727 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DF756399214F5F3700BAF727 /* HelpViewController.h */,
+				DF75639A214F5F3700BAF727 /* HelpViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DF756395214F56C900BAF727 /* Modes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modes;
+			sourceTree = "<group>";
+		};
+		DF756396214F56C900BAF727 /* Views */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -252,6 +296,7 @@
 		DFAC4457214262280021B7E0 /* InviteMaster */ = {
 			isa = PBXGroup;
 			children = (
+				DF756393214F56C900BAF727 /* Help */,
 				DF7530AF214A57CD00B7FA6C /* Wallet */,
 				DF58EFE72147ABDB00D238CB /* Mine */,
 				DFEF65852144E78800B91D76 /* Home */,
@@ -484,6 +529,7 @@
 				DFAC4462214262300021B7E0 /* Assets.xcassets in Resources */,
 				DF58EFEC2147AC2000D238CB /* Mine.storyboard in Resources */,
 				DFAC4460214262280021B7E0 /* Main.storyboard in Resources */,
+				DF756398214F56D900BAF727 /* Help.storyboard in Resources */,
 				DFEF65872144E79A00B91D76 /* Home.storyboard in Resources */,
 				DF7530B4214A57E000B7FA6C /* Wallet.storyboard in Resources */,
 			);
@@ -511,6 +557,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF15F0DA2144190400CA49C4 /* BaseViewController.m in Sources */,
+				DF75639B214F5F3700BAF727 /* HelpViewController.m in Sources */,
 				DF58EFEF2147AC6900D238CB /* MineViewController.m in Sources */,
 				DF271126214917450008611A /* SettingViewController.m in Sources */,
 				DF7530AE214A51C800B7FA6C /* BaseInfoViewController.m in Sources */,
@@ -531,6 +578,7 @@
 				DFAC445A214262280021B7E0 /* AppDelegate.m in Sources */,
 				DFF64AA1214645B20088FB8C /* HomeCollectionViewCell.m in Sources */,
 				DF063AC5214BB4E000B67F02 /* GiftCell.m in Sources */,
+				DF75639E214FAB5A00BAF727 /* BalanceViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
