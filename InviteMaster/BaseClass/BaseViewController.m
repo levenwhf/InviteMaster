@@ -81,11 +81,17 @@
 {
     if (_rightButton == nil)
     {
-        _rightButton = [[UIButton alloc]initWithFrame:CGRectMake(Screen_Width - 80, 20, 80, 44)];
+        _rightButton = [[UIButton alloc]initWithFrame:CGRectMake(Screen_Width - 54, 20, 54, 44)];
         _rightButton.titleLabel.font = [UIFont systemFontOfSize:14];
         [_rightButton setTitleColor:_navTintColor forState:UIControlStateNormal];
         [self.navView addSubview:_rightButton];
     }
+    
+    if (rightButtonTitle.length > 2)
+    {
+        _rightButton.frame = CGRectMake(Screen_Width - 80, 20, 80, 44);
+    }
+    
     [_rightButton setTitle:rightButtonTitle forState:UIControlStateNormal];
     
     [_rightButton removeTarget:target action:nil forControlEvents:UIControlEventTouchUpInside];

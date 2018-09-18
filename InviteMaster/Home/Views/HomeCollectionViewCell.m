@@ -47,38 +47,14 @@
     
 }
 
-- (IBAction)clickBtn1:(id)sender
+- (IBAction)clickBtn:(id)sender
 {
     if (self.delegate != nil && [self.delegate respondsToSelector:@selector(clickCellIndexPath:Title:)])
     {
-        [self.delegate clickCellIndexPath:self.indexPath Title:@""];
+        UIButton *btn = (UIButton *)sender;
+        [self.delegate clickCellIndexPath:self.indexPath Title:[btn titleForState:UIControlStateNormal]];
     }
 }
 
-- (IBAction)clickBtn2:(id)sender
-{
-    if (self.delegate != nil && [self.delegate respondsToSelector:@selector(clickCellIndexPath:Title:)])
-    {
-        [self.delegate clickCellIndexPath:self.indexPath Title:@""];
-    }
-}
-
-- (IBAction)clickBtn3:(id)sender
-{
-    if (self.delegate != nil && [self.delegate respondsToSelector:@selector(clickCellIndexPath:Title:)])
-    {
-        [self.delegate clickCellIndexPath:self.indexPath Title:@""];
-    }
-    
-}
-
-- (IBAction)clickBtn4:(id)sender
-{
-    if (self.delegate != nil && [self.delegate respondsToSelector:@selector(clickCellIndexPath:Title:)])
-    {
-        [self.delegate clickCellIndexPath:self.indexPath Title:@""];
-    }
-    
-}
 
 @end

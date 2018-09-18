@@ -22,6 +22,9 @@
 		DF756398214F56D900BAF727 /* Help.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF756397214F56D900BAF727 /* Help.storyboard */; };
 		DF75639B214F5F3700BAF727 /* HelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF75639A214F5F3700BAF727 /* HelpViewController.m */; };
 		DF75639E214FAB5A00BAF727 /* BalanceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF75639D214FAB5A00BAF727 /* BalanceViewController.m */; };
+		DF887A032150DCAD00CAE983 /* TTTAttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = DF887A022150DCAD00CAE983 /* TTTAttributedLabel.m */; };
+		DF887A062150F4F700CAE983 /* CommentQuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF887A052150F4F700CAE983 /* CommentQuestionViewController.m */; };
+		DF887A092150FC4E00CAE983 /* PreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF887A082150FC4E00CAE983 /* PreviewViewController.m */; };
 		DFAC445A214262280021B7E0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DFAC4459214262280021B7E0 /* AppDelegate.m */; };
 		DFAC4460214262280021B7E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFAC445E214262280021B7E0 /* Main.storyboard */; };
 		DFAC4462214262300021B7E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFAC4461214262300021B7E0 /* Assets.xcassets */; };
@@ -87,6 +90,12 @@
 		DF75639A214F5F3700BAF727 /* HelpViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelpViewController.m; sourceTree = "<group>"; };
 		DF75639C214FAB5A00BAF727 /* BalanceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BalanceViewController.h; sourceTree = "<group>"; };
 		DF75639D214FAB5A00BAF727 /* BalanceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BalanceViewController.m; sourceTree = "<group>"; };
+		DF887A012150DCAD00CAE983 /* TTTAttributedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTAttributedLabel.h; sourceTree = "<group>"; };
+		DF887A022150DCAD00CAE983 /* TTTAttributedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTAttributedLabel.m; sourceTree = "<group>"; };
+		DF887A042150F4F700CAE983 /* CommentQuestionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommentQuestionViewController.h; sourceTree = "<group>"; };
+		DF887A052150F4F700CAE983 /* CommentQuestionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommentQuestionViewController.m; sourceTree = "<group>"; };
+		DF887A072150FC4E00CAE983 /* PreviewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PreviewViewController.h; sourceTree = "<group>"; };
+		DF887A082150FC4E00CAE983 /* PreviewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PreviewViewController.m; sourceTree = "<group>"; };
 		DFAC4455214262280021B7E0 /* InviteMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InviteMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFAC4458214262280021B7E0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DFAC4459214262280021B7E0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -255,6 +264,8 @@
 			children = (
 				DF756399214F5F3700BAF727 /* HelpViewController.h */,
 				DF75639A214F5F3700BAF727 /* HelpViewController.m */,
+				DF887A042150F4F700CAE983 /* CommentQuestionViewController.h */,
+				DF887A052150F4F700CAE983 /* CommentQuestionViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -271,6 +282,15 @@
 			children = (
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		DF887A002150DCAD00CAE983 /* TTTAttributedLabel */ = {
+			isa = PBXGroup;
+			children = (
+				DF887A012150DCAD00CAE983 /* TTTAttributedLabel.h */,
+				DF887A022150DCAD00CAE983 /* TTTAttributedLabel.m */,
+			);
+			path = TTTAttributedLabel;
 			sourceTree = "<group>";
 		};
 		DFAC444C214262280021B7E0 = {
@@ -346,6 +366,7 @@
 		DFB5D613214545500013E8F5 /* ThirdFiles */ = {
 			isa = PBXGroup;
 			children = (
+				DF887A002150DCAD00CAE983 /* TTTAttributedLabel */,
 				DFB5D6142145456F0013E8F5 /* AttributedLabel */,
 			);
 			path = ThirdFiles;
@@ -409,6 +430,8 @@
 				DFF64A9C214644E40088FB8C /* HomeViewController.m */,
 				DF58EFE3214763A900D238CB /* HomePageViewController.h */,
 				DF58EFE4214763A900D238CB /* HomePageViewController.m */,
+				DF887A072150FC4E00CAE983 /* PreviewViewController.h */,
+				DF887A082150FC4E00CAE983 /* PreviewViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -564,9 +587,12 @@
 				DF27112321490D3F0008611A /* BaseNavController.m in Sources */,
 				DFAC448D214263AA0021B7E0 /* LoginViewController.m in Sources */,
 				DFB5D6232145456F0013E8F5 /* WPHotspotLabel.m in Sources */,
+				DF887A062150F4F700CAE983 /* CommentQuestionViewController.m in Sources */,
 				DFAC4468214262300021B7E0 /* main.m in Sources */,
 				DFB5D6212145456F0013E8F5 /* NSString+WPAttributedMarkup.m in Sources */,
 				DFB5D6252145456F0013E8F5 /* WPAttributedStyleAction.m in Sources */,
+				DF887A032150DCAD00CAE983 /* TTTAttributedLabel.m in Sources */,
+				DF887A092150FC4E00CAE983 /* PreviewViewController.m in Sources */,
 				DF58EFF32147C66800D238CB /* MineTableViewCell.m in Sources */,
 				DF58EFE5214763A900D238CB /* HomePageViewController.m in Sources */,
 				DF063AC2214BB4C600B67F02 /* CashCell.m in Sources */,

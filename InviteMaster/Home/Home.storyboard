@@ -500,7 +500,7 @@
                                                                         <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     </state>
                                                                     <connections>
-                                                                        <action selector="clickBtn1:" destination="z8s-XQ-KyQ" eventType="touchUpInside" id="uFV-XE-xo3"/>
+                                                                        <action selector="clickBtn:" destination="z8s-XQ-KyQ" eventType="touchUpInside" id="EVd-AP-SGn"/>
                                                                     </connections>
                                                                 </button>
                                                                 <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="28" placeholderIntrinsicHeight="28" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AU1-ma-C41">
@@ -511,7 +511,7 @@
                                                                         <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     </state>
                                                                     <connections>
-                                                                        <action selector="clickBtn2:" destination="z8s-XQ-KyQ" eventType="touchUpInside" id="OQC-hU-9Vq"/>
+                                                                        <action selector="clickBtn:" destination="z8s-XQ-KyQ" eventType="touchUpInside" id="A0F-28-Ne1"/>
                                                                     </connections>
                                                                 </button>
                                                                 <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="28" placeholderIntrinsicHeight="28" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oxQ-iD-Lod">
@@ -522,7 +522,7 @@
                                                                         <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     </state>
                                                                     <connections>
-                                                                        <action selector="clickBtn3:" destination="z8s-XQ-KyQ" eventType="touchUpInside" id="rID-3G-41k"/>
+                                                                        <action selector="clickBtn:" destination="z8s-XQ-KyQ" eventType="touchUpInside" id="hsO-VI-IEE"/>
                                                                     </connections>
                                                                 </button>
                                                                 <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="28" placeholderIntrinsicHeight="28" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NTm-OW-C7i">
@@ -533,7 +533,7 @@
                                                                         <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     </state>
                                                                     <connections>
-                                                                        <action selector="clickBtn4:" destination="z8s-XQ-KyQ" eventType="touchUpInside" id="n2T-XO-8vb"/>
+                                                                        <action selector="clickBtn:" destination="z8s-XQ-KyQ" eventType="touchUpInside" id="1yH-Qc-5s3"/>
                                                                     </connections>
                                                                 </button>
                                                             </subviews>

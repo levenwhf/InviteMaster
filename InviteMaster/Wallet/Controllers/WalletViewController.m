@@ -85,7 +85,7 @@
     self.constraintScrollContentWidth.constant = Screen_Width * 2;
 }
 
-#pragma mark - method
+#pragma mark - settle
 
 - (void)setupUI
 {

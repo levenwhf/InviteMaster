@@ -58,7 +58,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - method
+#pragma mark - settle
 
 - (void)setupUI
 {

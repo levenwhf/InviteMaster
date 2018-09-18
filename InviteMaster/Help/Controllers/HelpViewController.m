@@ -7,6 +7,7 @@
 //
 
 #import "HelpViewController.h"
+#import "CommentQuestionViewController.h"
 
 @interface HelpViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -55,7 +56,7 @@
 }
 
 
-#pragma mark - method
+#pragma mark - settle
 
 - (void)setupUI
 {
@@ -237,6 +238,10 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(nonnull NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath  animated:YES];
+    
+    CommentQuestionViewController *vc = [CommentQuestionViewController newCommentQuestionVC];
+    
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 

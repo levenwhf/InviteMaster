@@ -10,8 +10,11 @@
 #import "MineViewController.h"
 #import "WalletViewController.h"
 #import "HelpViewController.h"
+#import "PreviewViewController.h"
 
-@interface HomePageViewController ()<UICollectionViewDelegate, UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,UIScrollViewDelegate>
+#import "HomeCollectionViewCell.h"
+
+@interface HomePageViewController ()<UICollectionViewDelegate, UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,UIScrollViewDelegate,HomeCellDelegate>
 
 @property (weak, nonatomic) IBOutlet UIButton *btnUser;
 
@@ -56,7 +59,7 @@
     [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
 }
 
-#pragma mark - method
+#pragma mark - settle
 
 - (void)setupUI
 {
@@ -224,9 +227,22 @@
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
+    HomeCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
+    
+    cell.delegate = self;
     
     return cell;
+}
+
+#pragma mark - HomeCellDelegate
+
+- (void)clickCellIndexPath:(NSIndexPath *)indexPath Title:(NSString *)title
+{
+    if ([title isEqualToString:@"预览"])
+    {
+        PreviewViewController *vc = [[PreviewViewController alloc]init];
+        [self.navigationController pushViewController:vc animated:YES];        
+    }
 }
 
 @end

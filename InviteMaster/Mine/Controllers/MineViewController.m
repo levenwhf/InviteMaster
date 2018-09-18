@@ -53,7 +53,7 @@
     [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleDefault;
 }
 
-#pragma mark - method
+#pragma mark - settle
 
 - (void)setupUI
 {
