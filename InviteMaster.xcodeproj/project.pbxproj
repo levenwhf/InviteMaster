@@ -16,6 +16,11 @@
 		DF58EFEC2147AC2000D238CB /* Mine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF58EFEB2147AC2000D238CB /* Mine.storyboard */; };
 		DF58EFEF2147AC6900D238CB /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF58EFEE2147AC6900D238CB /* MineViewController.m */; };
 		DF58EFF32147C66800D238CB /* MineTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DF58EFF22147C66800D238CB /* MineTableViewCell.m */; };
+		DF6DAE2E21539DD10060B820 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF6DAE2D21539DD10060B820 /* CoreLocation.framework */; };
+		DF6DAE3021539FA40060B820 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF6DAE2F21539FA40060B820 /* MapKit.framework */; };
+		DF72FD042151EF2A004A78E8 /* EditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF72FD032151EF2A004A78E8 /* EditViewController.m */; };
+		DF72FD0721523873004A78E8 /* InviteInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF72FD0621523873004A78E8 /* InviteInfoViewController.m */; };
+		DF72FD0A21523AB1004A78E8 /* InviteSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF72FD0921523AB1004A78E8 /* InviteSettingViewController.m */; };
 		DF7530AE214A51C800B7FA6C /* BaseInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF7530AD214A51C800B7FA6C /* BaseInfoViewController.m */; };
 		DF7530B4214A57E000B7FA6C /* Wallet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF7530B3214A57E000B7FA6C /* Wallet.storyboard */; };
 		DF7530B7214A596200B7FA6C /* WalletViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF7530B6214A596200B7FA6C /* WalletViewController.m */; };
@@ -80,6 +85,14 @@
 		DF58EFEE2147AC6900D238CB /* MineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
 		DF58EFF12147C66800D238CB /* MineTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineTableViewCell.h; sourceTree = "<group>"; };
 		DF58EFF22147C66800D238CB /* MineTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineTableViewCell.m; sourceTree = "<group>"; };
+		DF6DAE2D21539DD10060B820 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		DF6DAE2F21539FA40060B820 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		DF72FD022151EF2A004A78E8 /* EditViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EditViewController.h; sourceTree = "<group>"; };
+		DF72FD032151EF2A004A78E8 /* EditViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EditViewController.m; sourceTree = "<group>"; };
+		DF72FD0521523873004A78E8 /* InviteInfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InviteInfoViewController.h; sourceTree = "<group>"; };
+		DF72FD0621523873004A78E8 /* InviteInfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InviteInfoViewController.m; sourceTree = "<group>"; };
+		DF72FD0821523AB1004A78E8 /* InviteSettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InviteSettingViewController.h; sourceTree = "<group>"; };
+		DF72FD0921523AB1004A78E8 /* InviteSettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InviteSettingViewController.m; sourceTree = "<group>"; };
 		DF7530AC214A51C800B7FA6C /* BaseInfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseInfoViewController.h; sourceTree = "<group>"; };
 		DF7530AD214A51C800B7FA6C /* BaseInfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseInfoViewController.m; sourceTree = "<group>"; };
 		DF7530B3214A57E000B7FA6C /* Wallet.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Wallet.storyboard; sourceTree = "<group>"; };
@@ -136,6 +149,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF6DAE3021539FA40060B820 /* MapKit.framework in Frameworks */,
+				DF6DAE2E21539DD10060B820 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,6 +221,15 @@
 				DF58EFF22147C66800D238CB /* MineTableViewCell.m */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		DF6DAE2C21539DD00060B820 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DF6DAE2F21539FA40060B820 /* MapKit.framework */,
+				DF6DAE2D21539DD10060B820 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		DF7530AF214A57CD00B7FA6C /* Wallet */ = {
@@ -300,6 +324,7 @@
 				DFAC4470214262300021B7E0 /* InviteMasterTests */,
 				DFAC447B214262300021B7E0 /* InviteMasterUITests */,
 				DFAC4456214262280021B7E0 /* Products */,
+				DF6DAE2C21539DD00060B820 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -432,6 +457,12 @@
 				DF58EFE4214763A900D238CB /* HomePageViewController.m */,
 				DF887A072150FC4E00CAE983 /* PreviewViewController.h */,
 				DF887A082150FC4E00CAE983 /* PreviewViewController.m */,
+				DF72FD022151EF2A004A78E8 /* EditViewController.h */,
+				DF72FD032151EF2A004A78E8 /* EditViewController.m */,
+				DF72FD0821523AB1004A78E8 /* InviteSettingViewController.h */,
+				DF72FD0921523AB1004A78E8 /* InviteSettingViewController.m */,
+				DF72FD0521523873004A78E8 /* InviteInfoViewController.h */,
+				DF72FD0621523873004A78E8 /* InviteInfoViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -580,11 +611,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF15F0DA2144190400CA49C4 /* BaseViewController.m in Sources */,
+				DF72FD042151EF2A004A78E8 /* EditViewController.m in Sources */,
 				DF75639B214F5F3700BAF727 /* HelpViewController.m in Sources */,
 				DF58EFEF2147AC6900D238CB /* MineViewController.m in Sources */,
 				DF271126214917450008611A /* SettingViewController.m in Sources */,
 				DF7530AE214A51C800B7FA6C /* BaseInfoViewController.m in Sources */,
 				DF27112321490D3F0008611A /* BaseNavController.m in Sources */,
+				DF72FD0721523873004A78E8 /* InviteInfoViewController.m in Sources */,
 				DFAC448D214263AA0021B7E0 /* LoginViewController.m in Sources */,
 				DFB5D6232145456F0013E8F5 /* WPHotspotLabel.m in Sources */,
 				DF887A062150F4F700CAE983 /* CommentQuestionViewController.m in Sources */,
@@ -592,6 +625,7 @@
 				DFB5D6212145456F0013E8F5 /* NSString+WPAttributedMarkup.m in Sources */,
 				DFB5D6252145456F0013E8F5 /* WPAttributedStyleAction.m in Sources */,
 				DF887A032150DCAD00CAE983 /* TTTAttributedLabel.m in Sources */,
+				DF72FD0A21523AB1004A78E8 /* InviteSettingViewController.m in Sources */,
 				DF887A092150FC4E00CAE983 /* PreviewViewController.m in Sources */,
 				DF58EFF32147C66800D238CB /* MineTableViewCell.m in Sources */,
 				DF58EFE5214763A900D238CB /* HomePageViewController.m in Sources */,

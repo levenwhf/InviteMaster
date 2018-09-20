@@ -11,6 +11,7 @@
 #import "WalletViewController.h"
 #import "HelpViewController.h"
 #import "PreviewViewController.h"
+#import "EditViewController.h"
 
 #import "HomeCollectionViewCell.h"
 
@@ -242,6 +243,11 @@
     {
         PreviewViewController *vc = [[PreviewViewController alloc]init];
         [self.navigationController pushViewController:vc animated:YES];        
+    }
+    else if ([title isEqualToString:@"编辑"])
+    {
+        EditViewController *vc = [EditViewController newEditVC];
+        [self.navigationController pushViewController:vc animated:YES];
     }
 }
 
