@@ -7,6 +7,8 @@
 //
 
 #import "InviteInfoViewController.h"
+#import "LocationViewController.h"
+
 #import <MapKit/MapKit.h>
 #import <CoreLocation/CoreLocation.h>
 
@@ -22,6 +24,8 @@
 @property (nonatomic, strong)UITextField *txtLink;
 @property (nonatomic, strong)UILabel *lblDate;
 @property (nonatomic, strong)UITextView *txtViewAddr;
+
+@property (nonatomic, strong)UIButton *btnLocation;
 
 @property (strong, nonatomic) MKMapView *mapView;
 
@@ -113,6 +117,13 @@
     
 }
 
+- (void)clickLocation
+{
+    LocationViewController *vc = [LocationViewController newLocationVC];
+//    SearchAddrViewController *vc = [[SearchAddrViewController alloc]init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
 #pragma mark - CLLocationManagerDelegate
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
@@ -189,17 +200,28 @@
         if (indexPath.row == 0)
         {
             cell = [tableView dequeueReusableCellWithIdentifier:@"cellWeChatTitle" forIndexPath:indexPath];
-            _txtWeChatTitle = [cell viewWithTag:2];
+            if (_txtWeChatTitle == nil)
+            {
+                _txtWeChatTitle = [cell viewWithTag:2];
+            }
         }
         else if (indexPath.row == 1)
         {
             cell = [tableView dequeueReusableCellWithIdentifier:@"cellWeChatDesc" forIndexPath:indexPath];
-            _txtWeChatDesc = [cell viewWithTag:2];
+            
+            if (_txtWeChatDesc == nil)
+            {
+                _txtWeChatDesc = [cell viewWithTag:2];
+            }
         }
         else if (indexPath.row == 2)
         {
             cell = [tableView dequeueReusableCellWithIdentifier:@"cellPwd" forIndexPath:indexPath];
-            _txtPwd = [cell viewWithTag:2];
+            
+            if (_txtPwd == nil)
+            {
+                _txtPwd = [cell viewWithTag:2];
+            }
         }
     }
     else if (indexPath.section == 1)
@@ -207,28 +229,53 @@
         if (indexPath.row == 0)
         {
             cell = [tableView dequeueReusableCellWithIdentifier:@"cellPhone1" forIndexPath:indexPath];
-            _txtPhone1 = [cell viewWithTag:2];
+            
+            if (_txtPhone1 == nil)
+            {
+                _txtPhone1 = [cell viewWithTag:2];
+            }
         }
         else if (indexPath.row == 1)
         {
             cell = [tableView dequeueReusableCellWithIdentifier:@"cellPhone2" forIndexPath:indexPath];
-            _txtPhone2 = [cell viewWithTag:2];
+            
+            if (_txtPhone2 == nil)
+            {
+                _txtPhone2 = [cell viewWithTag:2];
+            }
         }
     }
     else if (indexPath.section == 2)
     {
         cell = [tableView dequeueReusableCellWithIdentifier:@"cellLink" forIndexPath:indexPath];
-        _txtLink = [cell viewWithTag:2];
+        
+        if (_txtLink == nil)
+        {
+            _txtLink = [cell viewWithTag:2];
+        }
     }
     else if (indexPath.section == 3)
     {
         cell = [tableView dequeueReusableCellWithIdentifier:@"cellDate" forIndexPath:indexPath];
-        _lblDate = [cell viewWithTag:2];
+        
+        if (_lblDate == nil)
+        {
+            _lblDate = [cell viewWithTag:2];
+        }
     }
     else if (indexPath.section == 4)
     {
         cell = [tableView dequeueReusableCellWithIdentifier:@"cellAddr" forIndexPath:indexPath];
-        _txtViewAddr = [cell viewWithTag:2];
+        
+        if (_txtViewAddr == nil)
+        {
+            _txtViewAddr = [cell viewWithTag:2];
+        }
+        if (_btnLocation == nil)
+        {
+            _btnLocation = [cell viewWithTag:3];
+            [_btnLocation addTarget:self action:@selector(clickLocation) forControlEvents:UIControlEventTouchUpInside];
+        }
     }
     
     if (cell == nil)

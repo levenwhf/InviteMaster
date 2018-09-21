@@ -10,7 +10,6 @@
 
 @interface BaseViewController ()
 
-@property (nonatomic, strong)UIButton *rightButton;
 
 @end
 
@@ -32,16 +31,11 @@
 {
     [super viewWillAppear:animated];
     
+    [self.view bringSubviewToFront:self.navView];
+    
     //设置导航栏隐藏
     [self.navigationController setNavigationBarHidden:YES animated:YES];
     [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
-}
-
-- (void)viewDidAppear:(BOOL)animated
-{
-    [super viewDidAppear:animated];
-
-    [self.view bringSubviewToFront:self.navView];
 }
 
 - (void)setupNavView
