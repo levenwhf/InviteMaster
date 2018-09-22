@@ -7,6 +7,7 @@
 //
 
 #import "PreviewViewController.h"
+#import "SendCardViewController.h"
 
 #import <WebKit/WebKit.h>
 
@@ -57,6 +58,9 @@
 - (void)clickSend
 {
     NSLog(@"clickSend");
+    
+    SendCardViewController *vc = [SendCardViewController newSendCardVC];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 @end
