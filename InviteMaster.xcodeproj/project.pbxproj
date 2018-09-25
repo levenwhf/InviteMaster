@@ -12,6 +12,7 @@
 		DF15F0DA2144190400CA49C4 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF15F0D92144190400CA49C4 /* BaseViewController.m */; };
 		DF27112321490D3F0008611A /* BaseNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF27112221490D3F0008611A /* BaseNavController.m */; };
 		DF271126214917450008611A /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF271125214917450008611A /* SettingViewController.m */; };
+		DF3B4FEE215697B8001A30C9 /* SendCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF3B4FED215697B8001A30C9 /* SendCardViewController.m */; };
 		DF4FEC90215491BD00FBE086 /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4FEC8F215491BD00FBE086 /* LocationViewController.m */; };
 		DF58EFE5214763A900D238CB /* HomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF58EFE4214763A900D238CB /* HomePageViewController.m */; };
 		DF58EFEC2147AC2000D238CB /* Mine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF58EFEB2147AC2000D238CB /* Mine.storyboard */; };
@@ -79,6 +80,8 @@
 		DF27112221490D3F0008611A /* BaseNavController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseNavController.m; sourceTree = "<group>"; };
 		DF271124214917450008611A /* SettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
 		DF271125214917450008611A /* SettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		DF3B4FEC215697B8001A30C9 /* SendCardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SendCardViewController.h; sourceTree = "<group>"; };
+		DF3B4FED215697B8001A30C9 /* SendCardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SendCardViewController.m; sourceTree = "<group>"; };
 		DF4FEC8E215491BD00FBE086 /* LocationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocationViewController.h; sourceTree = "<group>"; };
 		DF4FEC8F215491BD00FBE086 /* LocationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationViewController.m; sourceTree = "<group>"; };
 		DF58EFE3214763A900D238CB /* HomePageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomePageViewController.h; sourceTree = "<group>"; };
@@ -468,6 +471,8 @@
 				DF72FD0621523873004A78E8 /* InviteInfoViewController.m */,
 				DF4FEC8E215491BD00FBE086 /* LocationViewController.h */,
 				DF4FEC8F215491BD00FBE086 /* LocationViewController.m */,
+				DF3B4FEC215697B8001A30C9 /* SendCardViewController.h */,
+				DF3B4FED215697B8001A30C9 /* SendCardViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -620,6 +625,7 @@
 				DF75639B214F5F3700BAF727 /* HelpViewController.m in Sources */,
 				DF58EFEF2147AC6900D238CB /* MineViewController.m in Sources */,
 				DF271126214917450008611A /* SettingViewController.m in Sources */,
+				DF3B4FEE215697B8001A30C9 /* SendCardViewController.m in Sources */,
 				DF7530AE214A51C800B7FA6C /* BaseInfoViewController.m in Sources */,
 				DF27112321490D3F0008611A /* BaseNavController.m in Sources */,
 				DF72FD0721523873004A78E8 /* InviteInfoViewController.m in Sources */,

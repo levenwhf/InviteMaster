@@ -9,6 +9,7 @@
 #import "EditViewController.h"
 #import "InviteSettingViewController.h"
 #import "PreviewViewController.h"
+#import "SendCardViewController.h"
 
 @interface EditViewController ()
 
@@ -69,6 +70,8 @@
 {
     NSLog(@"click Send");
     
+    SendCardViewController *vc = [SendCardViewController newSendCardVC];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)tapAddPage
