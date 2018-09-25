@@ -18,6 +18,8 @@
 		DF58EFEC2147AC2000D238CB /* Mine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF58EFEB2147AC2000D238CB /* Mine.storyboard */; };
 		DF58EFEF2147AC6900D238CB /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF58EFEE2147AC6900D238CB /* MineViewController.m */; };
 		DF58EFF32147C66800D238CB /* MineTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DF58EFF22147C66800D238CB /* MineTableViewCell.m */; };
+		DF59A452215A1C3C00EFC9A2 /* XFScrollSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = DF59A451215A1C3B00EFC9A2 /* XFScrollSegment.m */; };
+		DF59A455215A28BF00EFC9A2 /* SelectMusicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF59A454215A28BF00EFC9A2 /* SelectMusicViewController.m */; };
 		DF6DAE2E21539DD10060B820 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF6DAE2D21539DD10060B820 /* CoreLocation.framework */; };
 		DF6DAE3021539FA40060B820 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF6DAE2F21539FA40060B820 /* MapKit.framework */; };
 		DF72FD042151EF2A004A78E8 /* EditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF72FD032151EF2A004A78E8 /* EditViewController.m */; };
@@ -91,6 +93,10 @@
 		DF58EFEE2147AC6900D238CB /* MineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
 		DF58EFF12147C66800D238CB /* MineTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineTableViewCell.h; sourceTree = "<group>"; };
 		DF58EFF22147C66800D238CB /* MineTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineTableViewCell.m; sourceTree = "<group>"; };
+		DF59A450215A1C3B00EFC9A2 /* XFScrollSegment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XFScrollSegment.h; sourceTree = "<group>"; };
+		DF59A451215A1C3B00EFC9A2 /* XFScrollSegment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XFScrollSegment.m; sourceTree = "<group>"; };
+		DF59A453215A28BF00EFC9A2 /* SelectMusicViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelectMusicViewController.h; sourceTree = "<group>"; };
+		DF59A454215A28BF00EFC9A2 /* SelectMusicViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelectMusicViewController.m; sourceTree = "<group>"; };
 		DF6DAE2D21539DD10060B820 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		DF6DAE2F21539FA40060B820 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		DF72FD022151EF2A004A78E8 /* EditViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EditViewController.h; sourceTree = "<group>"; };
@@ -229,6 +235,31 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		DF59A44D215A1C1F00EFC9A2 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				DF59A44E215A1C1F00EFC9A2 /* Views */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		DF59A44E215A1C1F00EFC9A2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DF59A44F215A1C1F00EFC9A2 /* XFScrollSegment */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DF59A44F215A1C1F00EFC9A2 /* XFScrollSegment */ = {
+			isa = PBXGroup;
+			children = (
+				DF59A450215A1C3B00EFC9A2 /* XFScrollSegment.h */,
+				DF59A451215A1C3B00EFC9A2 /* XFScrollSegment.m */,
+			);
+			path = XFScrollSegment;
+			sourceTree = "<group>";
+		};
 		DF6DAE2C21539DD00060B820 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -347,6 +378,7 @@
 		DFAC4457214262280021B7E0 /* InviteMaster */ = {
 			isa = PBXGroup;
 			children = (
+				DF59A44D215A1C1F00EFC9A2 /* common */,
 				DF756393214F56C900BAF727 /* Help */,
 				DF7530AF214A57CD00B7FA6C /* Wallet */,
 				DF58EFE72147ABDB00D238CB /* Mine */,
@@ -473,6 +505,8 @@
 				DF4FEC8F215491BD00FBE086 /* LocationViewController.m */,
 				DF3B4FEC215697B8001A30C9 /* SendCardViewController.h */,
 				DF3B4FED215697B8001A30C9 /* SendCardViewController.m */,
+				DF59A453215A28BF00EFC9A2 /* SelectMusicViewController.h */,
+				DF59A454215A28BF00EFC9A2 /* SelectMusicViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -632,6 +666,7 @@
 				DFAC448D214263AA0021B7E0 /* LoginViewController.m in Sources */,
 				DFB5D6232145456F0013E8F5 /* WPHotspotLabel.m in Sources */,
 				DF887A062150F4F700CAE983 /* CommentQuestionViewController.m in Sources */,
+				DF59A452215A1C3C00EFC9A2 /* XFScrollSegment.m in Sources */,
 				DFAC4468214262300021B7E0 /* main.m in Sources */,
 				DFB5D6212145456F0013E8F5 /* NSString+WPAttributedMarkup.m in Sources */,
 				DFB5D6252145456F0013E8F5 /* WPAttributedStyleAction.m in Sources */,
@@ -651,6 +686,7 @@
 				DFF64AA1214645B20088FB8C /* HomeCollectionViewCell.m in Sources */,
 				DF063AC5214BB4E000B67F02 /* GiftCell.m in Sources */,
 				DF75639E214FAB5A00BAF727 /* BalanceViewController.m in Sources */,
+				DF59A455215A28BF00EFC9A2 /* SelectMusicViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -819,8 +855,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9TPT55BMW7;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 52Y482SSHD;
 				GCC_PREFIX_HEADER = InviteMaster/BaseClass/PrefixHeader.pch;
 				INFOPLIST_FILE = InviteMaster/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -828,8 +864,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = xfkj.InviteMaster;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xxx.master;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "33b515f4-cc57-4504-9311-d2d10815d229";
+				PROVISIONING_PROFILE_SPECIFIER = master_deve;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -838,8 +876,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9TPT55BMW7;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				GCC_PREFIX_HEADER = InviteMaster/BaseClass/PrefixHeader.pch;
 				INFOPLIST_FILE = InviteMaster/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -847,8 +885,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = xfkj.InviteMaster;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xxx.master;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

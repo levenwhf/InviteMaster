@@ -8,6 +8,7 @@
 
 #import "InviteSettingViewController.h"
 #import "InviteInfoViewController.h"
+#import "SelectMusicViewController.h"
 
 @interface InviteSettingViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -176,6 +177,11 @@
             InviteInfoViewController *vc = [InviteInfoViewController newInviteInfoVC];
             [self.navigationController pushViewController:vc animated:YES];
         }
+    }
+    else if (indexPath.section == 1)
+    {
+        SelectMusicViewController *vc = [SelectMusicViewController newSelectMusicVC];
+        [self.navigationController pushViewController:vc animated:YES];
     }
 }
 

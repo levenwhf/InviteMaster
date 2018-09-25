@@ -1586,6 +1586,41 @@
             </objects>
             <point key="canvasLocation" x="5760.8000000000002" y="-260.41979010494754"/>
         </scene>
+        <!--Select Music View Controller-->
+        <scene sceneID="bct-H9-DgV">
+            <objects>
+                <viewController storyboardIdentifier="vcSelectMusic" id="tgL-OW-q6B" customClass="SelectMusicViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4Ce-iS-V3v"/>
+                        <viewControllerLayoutGuide type="bottom" id="5Ae-ns-B3F"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ezw-wf-R6Q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tFu-5I-xhq" customClass="XFScrollSegment">
+                                <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Lt7-oD-WKf"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tFu-5I-xhq" firstAttribute="leading" secondItem="ezw-wf-R6Q" secondAttribute="leading" id="D2K-SW-wdj"/>
+                            <constraint firstItem="tFu-5I-xhq" firstAttribute="top" secondItem="4Ce-iS-V3v" secondAttribute="bottom" constant="44" id="kJY-n1-ygO"/>
+                            <constraint firstAttribute="trailing" secondItem="tFu-5I-xhq" secondAttribute="trailing" id="sSV-U0-ktZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="seg" destination="tFu-5I-xhq" id="6Pg-Rn-k7V"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EVT-Ln-r9Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6552.8000000000002" y="-259.52023988005999"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="zTx-Mi-885">
             <objects>

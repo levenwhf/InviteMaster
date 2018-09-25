@@ -51,7 +51,7 @@
 {
     if (_navView == nil)
     {
-        _navView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, Screen_Width, 64)];
+        _navView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, Screen_Width, SCREEN_SAFEAREA_TOP)];
         _navView.backgroundColor = BaseNavBarColor;
     }
     return _navView;
@@ -61,7 +61,7 @@
 {
     if (_lblTitle == nil)
     {
-        _lblTitle = [[UILabel alloc]initWithFrame:CGRectMake((Screen_Width - TitleWidth) / 2, 20, TitleWidth, 44)];
+        _lblTitle = [[UILabel alloc]initWithFrame:CGRectMake((Screen_Width - TitleWidth) / 2, SCREEN_SAFEAREA_TOP - 44, TitleWidth, 44)];
         
         _lblTitle.textAlignment = NSTextAlignmentCenter;
         _lblTitle.font = [UIFont boldSystemFontOfSize:17];
@@ -75,7 +75,7 @@
 {
     if (_rightButton == nil)
     {
-        _rightButton = [[UIButton alloc]initWithFrame:CGRectMake(Screen_Width - 54, 20, 54, 44)];
+        _rightButton = [[UIButton alloc]initWithFrame:CGRectMake(Screen_Width - 54, SCREEN_SAFEAREA_TOP - 44, 54, 44)];
         _rightButton.titleLabel.font = [UIFont systemFontOfSize:14];
         [_rightButton setTitleColor:_navTintColor forState:UIControlStateNormal];
         [self.navView addSubview:_rightButton];
@@ -83,7 +83,7 @@
     
     if (rightButtonTitle.length > 2)
     {
-        _rightButton.frame = CGRectMake(Screen_Width - 80, 20, 80, 44);
+        _rightButton.frame = CGRectMake(Screen_Width - 80, SCREEN_SAFEAREA_TOP - 44, 80, 44);
     }
     
     [_rightButton setTitle:rightButtonTitle forState:UIControlStateNormal];
@@ -96,7 +96,7 @@
 {
     if (_btnLeft == nil)
     {
-        _btnLeft = [[UIButton alloc]initWithFrame:CGRectMake(0, 20, 46, 44)];
+        _btnLeft = [[UIButton alloc]initWithFrame:CGRectMake(0, SCREEN_SAFEAREA_TOP - 44, 46, 44)];
         
         [_btnLeft setImage:[[UIImage imageNamed:@"nav_back"]imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate] forState:UIControlStateNormal];
         _btnLeft.tintColor = self.navTintColor;
