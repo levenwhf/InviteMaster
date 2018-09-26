@@ -180,7 +180,7 @@
     }
     else if (indexPath.section == 1)
     {
-        SelectMusicViewController *vc = [SelectMusicViewController newSelectMusicVC];
+        SelectMusicViewController *vc = [[SelectMusicViewController alloc]init];
         [self.navigationController pushViewController:vc animated:YES];
     }
 }

@@ -34,6 +34,7 @@
 		DF887A032150DCAD00CAE983 /* TTTAttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = DF887A022150DCAD00CAE983 /* TTTAttributedLabel.m */; };
 		DF887A062150F4F700CAE983 /* CommentQuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF887A052150F4F700CAE983 /* CommentQuestionViewController.m */; };
 		DF887A092150FC4E00CAE983 /* PreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF887A082150FC4E00CAE983 /* PreviewViewController.m */; };
+		DF9B18DD215B38D1007CD7B0 /* ChoseMusicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9B18DC215B38D1007CD7B0 /* ChoseMusicCell.m */; };
 		DFAC445A214262280021B7E0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DFAC4459214262280021B7E0 /* AppDelegate.m */; };
 		DFAC4460214262280021B7E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFAC445E214262280021B7E0 /* Main.storyboard */; };
 		DFAC4462214262300021B7E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFAC4461214262300021B7E0 /* Assets.xcassets */; };
@@ -121,6 +122,8 @@
 		DF887A052150F4F700CAE983 /* CommentQuestionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommentQuestionViewController.m; sourceTree = "<group>"; };
 		DF887A072150FC4E00CAE983 /* PreviewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PreviewViewController.h; sourceTree = "<group>"; };
 		DF887A082150FC4E00CAE983 /* PreviewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PreviewViewController.m; sourceTree = "<group>"; };
+		DF9B18DB215B38D1007CD7B0 /* ChoseMusicCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChoseMusicCell.h; sourceTree = "<group>"; };
+		DF9B18DC215B38D1007CD7B0 /* ChoseMusicCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChoseMusicCell.m; sourceTree = "<group>"; };
 		DFAC4455214262280021B7E0 /* InviteMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InviteMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFAC4458214262280021B7E0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DFAC4459214262280021B7E0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -516,6 +519,8 @@
 			children = (
 				DFF64A9F214645B20088FB8C /* HomeCollectionViewCell.h */,
 				DFF64AA0214645B20088FB8C /* HomeCollectionViewCell.m */,
+				DF9B18DB215B38D1007CD7B0 /* ChoseMusicCell.h */,
+				DF9B18DC215B38D1007CD7B0 /* ChoseMusicCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -664,6 +669,7 @@
 				DF27112321490D3F0008611A /* BaseNavController.m in Sources */,
 				DF72FD0721523873004A78E8 /* InviteInfoViewController.m in Sources */,
 				DFAC448D214263AA0021B7E0 /* LoginViewController.m in Sources */,
+				DF9B18DD215B38D1007CD7B0 /* ChoseMusicCell.m in Sources */,
 				DFB5D6232145456F0013E8F5 /* WPHotspotLabel.m in Sources */,
 				DF887A062150F4F700CAE983 /* CommentQuestionViewController.m in Sources */,
 				DF59A452215A1C3C00EFC9A2 /* XFScrollSegment.m in Sources */,

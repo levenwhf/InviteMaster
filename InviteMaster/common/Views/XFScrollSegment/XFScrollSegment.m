@@ -17,6 +17,17 @@
 
 @implementation XFScrollSegment
 
+- (instancetype)initWithFrame:(CGRect)frame
+{
+    if ([super initWithFrame:frame])
+    {
+        self.backgroundColor = [UIColor whiteColor];
+//        self.directionalLockEnabled = YES;
+//        self.bounces = YES;
+    }
+    return self;
+}
+
 - (void)setItems:(NSArray *)items
 {
     if (_items == nil)
@@ -53,16 +64,18 @@
 {
     CGFloat posX = 0;
     
-    self.contentSize = self.frame.size;
+//    self.contentSize = CGSizeMake(self.frame.size.width, self.frame.size.height);
     
     for (int i = 0; i < self.items.count; i++)
     {
         NSString *title = [self.items objectAtIndex:i];
         
-        CGSize lblSize = [title sizeWithAttributes:i == 0 ? self.lightingAttrDict : self.normalAttrDict];
+        NSDictionary *attrDict = (i == 0 ? self.lightingAttrDict : self.normalAttrDict);
+        
+        CGSize lblSize = [title sizeWithAttributes:attrDict];
         
         UILabel *lbl = [[UILabel alloc]initWithFrame:CGRectMake(posX + SpaceX , 0, lblSize.width, self.frame.size.height)];
-        lbl.attributedText = [[NSAttributedString alloc]initWithString:title attributes:i == 0 ? self.lightingAttrDict : self.normalAttrDict];
+        lbl.attributedText = [[NSAttributedString alloc]initWithString:title attributes:attrDict];
         lbl.tag = i + 1;
         
         lbl.userInteractionEnabled = YES;
@@ -73,10 +86,10 @@
         [self addSubview:lbl];
         
         posX = CGRectGetMaxX(lbl.frame);
-        if (posX + SpaceX > self.frame.size.width)
-        {
-            self.contentSize = CGSizeMake(posX + SpaceX, self.frame.size.height);
-        }
+//        if (posX + SpaceX > self.frame.size.width)
+//        {
+//            self.contentSize = CGSizeMake(posX + SpaceX, self.contentSize.height);
+//        }
     }
     
     CGRect firstItemFrame = [self viewWithTag:1].frame;

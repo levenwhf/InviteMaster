@@ -10,6 +10,5 @@
 
 @interface SelectMusicViewController : BaseViewController
 
-+ (id)newSelectMusicVC;
 
 @end

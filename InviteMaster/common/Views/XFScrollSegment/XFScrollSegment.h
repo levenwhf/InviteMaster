@@ -20,7 +20,7 @@
 @end
 
 
-@interface XFScrollSegment : UIScrollView
+@interface XFScrollSegment : UIView
 
 @property (nonatomic, retain)NSArray *items;
 

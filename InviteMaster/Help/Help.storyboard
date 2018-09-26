@@ -72,7 +72,7 @@
                                     <constraint firstItem="ebd-uq-u9P" firstAttribute="top" secondItem="Lci-1i-OeG" secondAttribute="bottom" id="oeg-XA-LFy"/>
                                 </constraints>
                             </view>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RdX-o7-80P">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RdX-o7-80P">
                                 <rect key="frame" x="0.0" y="105" width="375" height="562"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0le-rl-BhC">
@@ -270,7 +270,7 @@
                             <constraint firstItem="RdX-o7-80P" firstAttribute="leading" secondItem="Cl4-SZ-mgD" secondAttribute="leading" id="UGS-g3-AYX"/>
                             <constraint firstAttribute="trailing" secondItem="RdX-o7-80P" secondAttribute="trailing" id="c0I-rQ-NSr"/>
                             <constraint firstAttribute="trailing" secondItem="ncW-kz-iRg" secondAttribute="trailing" id="kNm-44-enG"/>
-                            <constraint firstItem="ncW-kz-iRg" firstAttribute="top" secondItem="Cl4-SZ-mgD" secondAttribute="top" constant="64" id="kZS-aZ-pfA"/>
+                            <constraint firstItem="ncW-kz-iRg" firstAttribute="top" secondItem="f2d-LI-IjC" secondAttribute="bottom" constant="44" id="kZS-aZ-pfA"/>
                             <constraint firstItem="RdX-o7-80P" firstAttribute="top" secondItem="ncW-kz-iRg" secondAttribute="bottom" constant="0.5" id="oIc-pN-B8h"/>
                             <constraint firstItem="QYp-3I-vos" firstAttribute="top" secondItem="RdX-o7-80P" secondAttribute="bottom" id="vjx-qH-826"/>
                         </constraints>
@@ -344,7 +344,7 @@
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="vzI-35-Qiw" firstAttribute="top" secondItem="3sB-TM-tPX" secondAttribute="top" constant="64" id="7pp-xK-DQY"/>
+                            <constraint firstItem="vzI-35-Qiw" firstAttribute="top" secondItem="rYu-Tn-Wms" secondAttribute="bottom" constant="44" id="7pp-xK-DQY"/>
                             <constraint firstItem="H2h-Kw-75s" firstAttribute="top" secondItem="vzI-35-Qiw" secondAttribute="bottom" constant="8" id="Dqu-oV-Z4N"/>
                             <constraint firstAttribute="trailing" secondItem="H2h-Kw-75s" secondAttribute="trailing" id="EKH-5o-56x"/>
                             <constraint firstItem="vzI-35-Qiw" firstAttribute="leading" secondItem="3sB-TM-tPX" secondAttribute="leading" id="ETO-Ec-H86"/>
@@ -360,7 +360,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mri-cc-K5z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-66.400000000000006" y="855.9220389805098"/>
+            <point key="canvasLocation" x="633" y="113"/>
         </scene>
     </scenes>
 </document>

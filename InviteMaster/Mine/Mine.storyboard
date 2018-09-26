@@ -318,7 +318,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="9g7-rY-RvG" secondAttribute="bottom" id="1cg-fR-ZbF"/>
-                            <constraint firstItem="9g7-rY-RvG" firstAttribute="top" secondItem="gUx-Qx-ek5" secondAttribute="top" constant="64" id="Xeb-YY-Xwr"/>
+                            <constraint firstItem="9g7-rY-RvG" firstAttribute="top" secondItem="ak8-wm-G10" secondAttribute="bottom" constant="44" id="Xeb-YY-Xwr"/>
                             <constraint firstAttribute="trailing" secondItem="9g7-rY-RvG" secondAttribute="trailing" id="cfG-vJ-Un7"/>
                             <constraint firstItem="9g7-rY-RvG" firstAttribute="leading" secondItem="gUx-Qx-ek5" secondAttribute="leading" id="m6E-Kl-5BP"/>
                         </constraints>
@@ -410,7 +410,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="6iv-Hn-BnL" firstAttribute="leading" secondItem="ld2-jE-nEX" secondAttribute="leading" id="H6n-TT-vgM"/>
-                            <constraint firstItem="6iv-Hn-BnL" firstAttribute="top" secondItem="ld2-jE-nEX" secondAttribute="top" constant="64" id="OYR-M9-yZc"/>
+                            <constraint firstItem="6iv-Hn-BnL" firstAttribute="top" secondItem="2ff-Kj-exa" secondAttribute="bottom" constant="44" id="OYR-M9-yZc"/>
                             <constraint firstAttribute="trailing" secondItem="6iv-Hn-BnL" secondAttribute="trailing" id="cfR-gb-BbR"/>
                             <constraint firstAttribute="bottom" secondItem="6iv-Hn-BnL" secondAttribute="bottom" id="qRA-xt-Ni2"/>
                         </constraints>

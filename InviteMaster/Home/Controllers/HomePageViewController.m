@@ -29,8 +29,6 @@
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 @property (weak, nonatomic) IBOutlet UIButton *btnCreate;
 
-@property (weak, nonatomic) IBOutlet NSLayoutConstraint *constraintContentViewTop;
-
 @property (nonatomic, assign) CGFloat lastContentOffset;
 @property (nonatomic, assign)BOOL menuHidden;
 
@@ -104,8 +102,6 @@
     
     if (_menuHidden)
     {
-        _constraintContentViewTop.constant = - self.menuView.frame.origin.y;
-
         [UIView animateWithDuration:0.3 animations:^{
             
             self.menuView.alpha = 0;
@@ -123,8 +119,6 @@
     }
     else
     {
-        _constraintContentViewTop.constant = 0;
-
         [UIView animateWithDuration:0.3 animations:^{
         
             self.menuView.alpha = 1;
