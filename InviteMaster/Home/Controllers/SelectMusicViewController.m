@@ -7,8 +7,9 @@
 //
 
 #import "SelectMusicViewController.h"
-#import "XFScrollSegment.h"
+#import "UploadMusicViewController.h"
 
+#import "XFScrollSegment.h"
 #import "ChoseMusicCell.h"
 
 @interface SelectMusicViewController ()<UITableViewDelegate, UITableViewDataSource>
@@ -181,6 +182,27 @@
     }
     
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    if (tableView == self.tableView)
+    {
+        if (indexPath.section == 0)
+        {
+            if (indexPath.row == 0)
+            {
+                
+            }
+            else if (indexPath.row == 1)
+            {
+                UploadMusicViewController *vc = [UploadMusicViewController newUploadMusicVC];
+                [self.navigationController pushViewController:vc animated:YES];
+            }
+        }
+    }
 }
 
 @end

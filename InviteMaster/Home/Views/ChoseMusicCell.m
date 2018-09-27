@@ -69,10 +69,12 @@
     if (isMark)
     {
         _imgViewMark.image = [UIImage imageNamed:@"icon_check"];
+        _lblTitle.textColor = BaseButtonColor;
     }
     else
     {
         _imgViewMark.image = nil;
+        _lblTitle.textColor = [UIColor darkGrayColor];
     }
     
     if (flag == ChoseMusicFlagNone)

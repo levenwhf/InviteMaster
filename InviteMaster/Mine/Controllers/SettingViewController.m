@@ -68,93 +68,76 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 50;
+    return 54;
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 5;
+    return 3;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    if (section == 2)
+    if (section == 0)
     {
-        return 5;
+        return 1;
+    }
+    else if (section == 1)
+    {
+        return 3;
+    }
+    else if (section == 2)
+    {
+        return 3;
     }
     
-    return 1;
+    return 0;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell;
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cellNormal" forIndexPath:indexPath];
     
     if (indexPath.section == 0)
     {
-        cell = [tableView dequeueReusableCellWithIdentifier:@"cellNormal" forIndexPath:indexPath];
-        cell.textLabel.text = @"基本信息";
-        cell.detailTextLabel.text = @"修改";
-        cell.detailTextLabel.textColor = [UIColor lightGrayColor];
+        cell.textLabel.text = @"账号安全";
+        cell.detailTextLabel.text = @" ";
     }
     else if (indexPath.section == 1)
     {
-        cell = [tableView dequeueReusableCellWithIdentifier:@"cellNew" forIndexPath:indexPath];
-        UILabel *lblTitle = [cell viewWithTag:1];
-        UILabel *lblDetail = [cell viewWithTag:2];
-        lblTitle.text = @"请帖音乐";
-        lblDetail.text = @"最重要的决定";
+        if (indexPath.row == 0)
+        {
+            cell.textLabel.text = @"个人信息";
+            cell.detailTextLabel.text = @" ";
+        }
+        else if (indexPath.row == 1)
+        {
+            cell.textLabel.text = @"第三方账号绑定";
+            cell.detailTextLabel.text = @" ";
+        }
+        else if (indexPath.row == 2)
+        {
+            cell.textLabel.text = @"意见反馈";
+            cell.detailTextLabel.text = @" ";
+        }
     }
     else if (indexPath.section == 2)
     {
-        if (indexPath.row == 4)
+        if (indexPath.row == 0)
         {
-            cell = [tableView dequeueReusableCellWithIdentifier:@"cellNormal" forIndexPath:indexPath];
-            cell.textLabel.text = @"提现到";
-            cell.detailTextLabel.text = @"设置提现账号";
-            cell.detailTextLabel.textColor = [UIColor redColor];
+            cell.textLabel.text = @"给请帖大师好评";
+            cell.detailTextLabel.text = @" ";
         }
-        else
+        else if (indexPath.row == 1)
         {
-            cell = [tableView dequeueReusableCellWithIdentifier:@"cellSwitch" forIndexPath:indexPath];
-            UILabel *lblTitle = [cell viewWithTag:1];
-            UISwitch *swh = [cell viewWithTag:2];
-            
-            if (indexPath.row == 0)
-            {
-                lblTitle.text = @"弹幕";
-                swh.on = NO;
-            }
-            else if (indexPath.row == 1)
-            {
-                lblTitle.text = @"虚拟礼物";
-                swh.on = NO;
-            }
-            else if (indexPath.row == 2)
-            {
-                lblTitle.text = @"礼金";
-                swh.on = NO;
-            }
-            else if (indexPath.row == 3)
-            {
-                lblTitle.text = @"尾页";
-                swh.on = NO;
-            }
+            cell.textLabel.text = @"关于我们";
+            cell.detailTextLabel.text = @" ";
         }
-    }
-    else if (indexPath.section == 3)
-    {
-        cell = [tableView dequeueReusableCellWithIdentifier:@"cellLabel" forIndexPath:indexPath];
-        UILabel *lblTitle = [cell viewWithTag:1];
-        lblTitle.textColor = [UIColor blackColor];
-        lblTitle.text = @"复制请帖";
-    }
-    else if (indexPath.section == 4)
-    {
-        cell = [tableView dequeueReusableCellWithIdentifier:@"cellLabel" forIndexPath:indexPath];
-        UILabel *lblTitle = [cell viewWithTag:1];
-        lblTitle.textColor = [UIColor redColor];
-        lblTitle.text = @"删除请帖";
+        else if (indexPath.row == 2)
+        {
+            cell.textLabel.text = @"清楚缓存";
+            cell.detailTextLabel.text = @" ";
+        }
     }
     
     if (cell == nil)
@@ -171,8 +154,38 @@
     
     if (indexPath.section == 0)
     {
-        BaseInfoViewController *vc = [BaseInfoViewController newBaseInfoVC];
-        [self.navigationController pushViewController:vc animated:YES];
+        
+    }
+    else if (indexPath.section == 1)
+    {
+        if (indexPath.row == 0)
+        {
+            BaseInfoViewController *vc = [BaseInfoViewController newBaseInfoVC];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+        else if (indexPath.row == 1)
+        {
+            
+        }
+        else if (indexPath.row == 3)
+        {
+            
+        }
+    }
+    else if (indexPath.section == 2)
+    {
+        if (indexPath.row == 0)
+        {
+            
+        }
+        else if (indexPath.row == 1)
+        {
+            
+        }
+        else if (indexPath.row == 3)
+        {
+            
+        }
     }
 }
 

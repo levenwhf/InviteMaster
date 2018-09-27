@@ -52,6 +52,9 @@
 		DFEF65872144E79A00B91D76 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFEF65862144E79A00B91D76 /* Home.storyboard */; };
 		DFF64A9E214644E40088FB8C /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFF64A9C214644E40088FB8C /* HomeViewController.m */; };
 		DFF64AA1214645B20088FB8C /* HomeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DFF64AA0214645B20088FB8C /* HomeCollectionViewCell.m */; };
+		DFFD0205215CC09900A9F42C /* UploadMusicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFFD0204215CC09900A9F42C /* UploadMusicViewController.m */; };
+		DFFD0208215CC3F000A9F42C /* AddNewPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFFD0207215CC3F000A9F42C /* AddNewPageViewController.m */; };
+		DFFD020B215CC7EF00A9F42C /* NewPageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DFFD020A215CC7EF00A9F42C /* NewPageCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -157,6 +160,12 @@
 		DFF64A9C214644E40088FB8C /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		DFF64A9F214645B20088FB8C /* HomeCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeCollectionViewCell.h; sourceTree = "<group>"; };
 		DFF64AA0214645B20088FB8C /* HomeCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeCollectionViewCell.m; sourceTree = "<group>"; };
+		DFFD0203215CC09900A9F42C /* UploadMusicViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UploadMusicViewController.h; sourceTree = "<group>"; };
+		DFFD0204215CC09900A9F42C /* UploadMusicViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UploadMusicViewController.m; sourceTree = "<group>"; };
+		DFFD0206215CC3F000A9F42C /* AddNewPageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddNewPageViewController.h; sourceTree = "<group>"; };
+		DFFD0207215CC3F000A9F42C /* AddNewPageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddNewPageViewController.m; sourceTree = "<group>"; };
+		DFFD0209215CC7EF00A9F42C /* NewPageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewPageCell.h; sourceTree = "<group>"; };
+		DFFD020A215CC7EF00A9F42C /* NewPageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewPageCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -510,6 +519,10 @@
 				DF3B4FED215697B8001A30C9 /* SendCardViewController.m */,
 				DF59A453215A28BF00EFC9A2 /* SelectMusicViewController.h */,
 				DF59A454215A28BF00EFC9A2 /* SelectMusicViewController.m */,
+				DFFD0203215CC09900A9F42C /* UploadMusicViewController.h */,
+				DFFD0204215CC09900A9F42C /* UploadMusicViewController.m */,
+				DFFD0206215CC3F000A9F42C /* AddNewPageViewController.h */,
+				DFFD0207215CC3F000A9F42C /* AddNewPageViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -521,6 +534,8 @@
 				DFF64AA0214645B20088FB8C /* HomeCollectionViewCell.m */,
 				DF9B18DB215B38D1007CD7B0 /* ChoseMusicCell.h */,
 				DF9B18DC215B38D1007CD7B0 /* ChoseMusicCell.m */,
+				DFFD0209215CC7EF00A9F42C /* NewPageCell.h */,
+				DFFD020A215CC7EF00A9F42C /* NewPageCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -667,6 +682,7 @@
 				DF3B4FEE215697B8001A30C9 /* SendCardViewController.m in Sources */,
 				DF7530AE214A51C800B7FA6C /* BaseInfoViewController.m in Sources */,
 				DF27112321490D3F0008611A /* BaseNavController.m in Sources */,
+				DFFD0208215CC3F000A9F42C /* AddNewPageViewController.m in Sources */,
 				DF72FD0721523873004A78E8 /* InviteInfoViewController.m in Sources */,
 				DFAC448D214263AA0021B7E0 /* LoginViewController.m in Sources */,
 				DF9B18DD215B38D1007CD7B0 /* ChoseMusicCell.m in Sources */,
@@ -676,6 +692,8 @@
 				DFAC4468214262300021B7E0 /* main.m in Sources */,
 				DFB5D6212145456F0013E8F5 /* NSString+WPAttributedMarkup.m in Sources */,
 				DFB5D6252145456F0013E8F5 /* WPAttributedStyleAction.m in Sources */,
+				DFFD020B215CC7EF00A9F42C /* NewPageCell.m in Sources */,
+				DFFD0205215CC09900A9F42C /* UploadMusicViewController.m in Sources */,
 				DF887A032150DCAD00CAE983 /* TTTAttributedLabel.m in Sources */,
 				DF72FD0A21523AB1004A78E8 /* InviteSettingViewController.m in Sources */,
 				DF887A092150FC4E00CAE983 /* PreviewViewController.m in Sources */,

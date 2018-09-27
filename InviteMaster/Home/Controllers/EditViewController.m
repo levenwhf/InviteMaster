@@ -10,6 +10,7 @@
 #import "InviteSettingViewController.h"
 #import "PreviewViewController.h"
 #import "SendCardViewController.h"
+#import "AddNewPageViewController.h"
 
 @interface EditViewController ()
 
@@ -77,6 +78,9 @@
 - (void)tapAddPage
 {
     NSLog(@"tap AddPage");
+    
+    AddNewPageViewController *vc = [[AddNewPageViewController alloc]init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)tapSort
